@@ -23,6 +23,7 @@ const Home = () => {
       <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-r from-[#FCC900] to-[#ffbd52] opacity-30 rounded-full filter blur-3xl z-0"></div>
       <div className="absolute top-96 left-0 w-96 h-96 bg-gradient-to-l from-[#ffbd52] to-[#FCC900] opacity-30 rounded-full filter blur-3xl z-0"></div>
      <Nav />
+     
      <Section1/>
     </div>
   );
