@@ -15,9 +15,8 @@ const Section1 = () => {
   const centerX = 250; // Offset to the right of the semi-circle
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-br  from-slate-50 via-gray-50 to-gray-100 relative overflow-hidden font-space-grotesk ">
-        <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-r from-green-400 to-blue-500 opacity-30 rounded-full filter blur-3xl z-0"></div>
-      <div className="absolute top-96 left-0 w-96 h-96 bg-gradient-to-l from-blue-400 to-green-500 opacity-30 rounded-full filter blur-3xl z-0"></div>
+    <div className="min-h-screen flex items-center justify-center  relative overflow-hidden font-space-grotesk ">
+        
 
       {/* Center Circle */}
       <div
