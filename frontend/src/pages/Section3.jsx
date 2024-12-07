@@ -35,58 +35,58 @@ const Section3 = () => {
         </div>
       </section>
 
-      <nav className='p-2 px-4 shadow-lg w-full flex flex-row items-center justify-between'>
+      <nav className='p-2 px-4 shadow-sm w-full flex flex-row items-center justify-between'>
         <img src={logo} alt="" className='w-10 h-10 object-cover' />
         <FontAwesomeIcon icon={faBars} className='cursor-pointer' onClick={() => setOpenSideBar(stat => !stat)} />
       </nav>
 
-      <div className='p-[30px] border-2 border-gray-500 rounded-full translate-x-[-50%] relative flex justify-end mt-[150px]'>
+      <div className='p-[30px] border-2 border-gray-500 rounded-full translate-x-[-50%] relative flex justify-end mt-[150px] sm:p-[40px]'>
         <div className='bg-white shadow-2xl flex items-center justify-center p-3 rounded-full'>
-          <div className='rounded-full bg-yellow-300 h-[250px] w-[250px] flex justify-end items-center p-4'>
-            <p className='w-[100px] text-wrap text-sm font-bold'> SNS DESIGN THINKING CONSULTANCY </p>
+          <div className='rounded-full bg-yellow-300 h-[250px] w-[250px] flex justify-end items-center p-4 sm:w-[330px] sm:h-[330px]'>
+            <p className='w-[100px] text-wrap text-sm font-bold sm:w-[130px] sm:text-lg'> SNS DESIGN THINKING CONSULTANCY </p>
           </div>
         </div>
 
-        <div className='absolute flex flex-row items-end translate-x-[45%] translate-y-[-115%] w-fit'>
+        <div className='absolute flex flex-row items-end translate-x-[55%] translate-y-[-112%] mbmd:translate-x-[60.5%] mbmd:translate-y-[-115%]'>
           <div className='rounded-full bg-[#DE2A1B] p-1 mr-2'> <FontAwesomeIcon icon={faRocket} className='text-white w-6' />  </div>
-          <div className='flex flex-col text-[10px] mb-5'>
+          <div className='flex flex-col text-[10px] mb-7 sm:text-[11px]'>
             <p className='bg-[#DE2A1B] p-2 rounded-lg mb-1 text-white font-semibold'> SNS Venture Capital and Investments </p>
-            <p className='w-full ml-1'> Funding high-potential startups for <br /> ownership stakes </p>
+            <p className='w-[200px] ml-1 mbmd:w-[250px]'> Funding high-potential startups for ownership stakes </p>
           </div>
         </div>
 
-        <div className='absolute flex flex-row items-end translate-x-[95%] translate-y-[-15%]'>
+        <div className='absolute flex flex-row items-end translate-x-[95%] translate-y-[-15%] sm:translate-x-[93%]'>
           <div className='rounded-full bg-[#B0D402] p-1 mr-2'> <FontAwesomeIcon icon={faBrain} className='text-white w-6' />  </div>
-          <div className='flex flex-col text-[10px]'>
+          <div className='flex flex-col text-[10px] sm:text-[11px]'>
             <p className='bg-[#B0D402] p-2 rounded-lg mb-1 text-white font-semibold'> SNS Square Technologies </p>
-            <p className='ml-1'> Empowering digital <br /> transformations
-              with IT and <br /> software solutions. </p>
+            <p className='ml-1 w-[140px] mbmd:w-[200px] mblg:w-[250px]'> Empowering digital transformations
+              with IT and software solutions. </p>
           </div>
         </div>
 
-        <div className='absolute flex flex-row items-start translate-x-[110%] translate-y-[165%]'>
+        <div className='absolute flex flex-row items-start translate-x-[110%] translate-y-[165%] mbmd:translate-y-[185%] mbmd:translate-x-[108%] sm:translate-y-[235%] sm:translate-x-[110%]'>
           <div className='rounded-full bg-[#E10485] p-1 mr-2'> <FontAwesomeIcon icon={faHandsHelping} className='text-white w-6' />  </div>
-          <div className='flex flex-col text-[10px]'>
+          <div className='flex flex-col text-[10px] sm:text-[11px]'>
             <p className='bg-[#E10485] p-2 rounded-lg mb-1 text-white font-semibold'> SNS Innovation Hub </p>
-            <p className='ml-1'> Empowering digital <br /> transformations
-              with IT <br />  and software solutions. </p>
+            <p className='ml-1 w-[120px] mbmd:w-[160px] mblg:w-[210px]'> Empowering digital transformations
+              with IT and software solutions. </p>
           </div>
         </div>
 
-        <div className='absolute flex flex-row items-start translate-x-[90%] translate-y-[250%]'>
+        <div className='absolute flex flex-row items-start translate-x-[90%] translate-y-[250%] mbmd:translate-y-[230%] mbmd:translate-x-[96%] sm:translate-y-[300%]'>
           <div className='rounded-full bg-[#EB510B] p-1 mr-2'> <FontAwesomeIcon icon={faSchool} className='text-white w-6' />  </div>
-          <div className='flex flex-col text-[10px] mt-6'>
+          <div className='flex flex-col text-[10px] mt-6 sm:text-[11px]'>
             <p className='bg-[#EB510B] p-2 rounded-lg mb-1 text-white font-semibold'> SNS Institutions </p>
-            <p className='ml-1'> Nurturing holistic development
-              <br /> through quality education. </p>
+            <p className='ml-1 w-[140px] mbmd:w-[200px] mblg:w-[250px]'> Nurturing holistic development
+             through quality education. </p>
           </div>
         </div>
 
-        <div className='absolute flex flex-row items-start translate-x-[35%] translate-y-[275%] w-fit'>
+        <div className='absolute flex flex-row items-start translate-x-[50%] translate-y-[250%] w-fit mbmd:translate-y-[270%] mbmd:translate-x-[60%] sm:translate-y-[335%]'>
           <div className='rounded-full bg-[#01A3D4] p-1'> <FontAwesomeIcon icon={faLightbulb} className='text-white w-6' /> </div>
-          <div className='flex flex-col text-[10px] mt-10'>
+          <div className='flex flex-col text-[10px] mt-12 mbmd:mt-10 sm:text-[11px]'>
             <p className='bg-[#01A3D4] p-2 rounded-lg mb-1 text-white font-semibold'> SNS B Spine </p>
-            <p className='w-full ml-1'> Igniting Gen Y through movement, <br />
+            <p className='w-[180px] ml-1 mbmd:w-[250px]'> Igniting Gen Y through movement, 
               innovation, and teamwork </p>
           </div>
         </div>

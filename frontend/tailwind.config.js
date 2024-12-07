@@ -9,7 +9,7 @@ export default {
       screens: {
         // Override the 'md' breakpoint
         md: '560px',
-        sm: '550px',
+        sm: '460px',
         mbsm: "320px",
         mbmd: "375px",
         mblg: "425px",

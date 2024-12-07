@@ -14,7 +14,7 @@ const App = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 425px)');
+    const mediaQuery = window.matchMedia('(max-width: 540px)');
 
     const handleResize = () => {
       setIsMobile(mediaQuery.matches);
