@@ -20,7 +20,10 @@ const Section1 = () => {
   return (
     <div className="min-h-screen   flex items-center justify-center relative">
       {/* Center Sun */}
-      <div className="w-80 h-80 bg-[#FCC900] border-[20px] border-white rounded-full flex items-center justify-center shadow-2xl">
+      <div className="w-80 h-80 absolute bg-[#FCC900] border-[20px] border-white rounded-full flex items-center justify-center shadow-2xl"  style={{
+            left: '350px',
+            transform: 'translateX(-50%)',
+    }}>
         <h2 className="text-black font-bold text-xl text-center">
           <span className="text-2xl">SNS</span> <br />
           Design Thinking <br />
@@ -29,7 +32,10 @@ const Section1 = () => {
       </div>
 
       {/* Features and Heading Boxes */}
-      <div className="absolute w-[34rem] h-[34rem] rounded-full border-4 border-gray flex items-center justify-center">
+      <div className="absolute w-[34rem] h-[34rem] rounded-full border-[20px] border-black flex items-center justify-center"  style={{
+    left: '10px',
+    transform: 'translateX(10%)',
+  }}>
         {features.map((feature, index) => {
           // Calculate angle for each feature
           const angle = (index * (360 / features.length)) * (Math.PI / 180); // Convert degrees to radians
@@ -53,7 +59,7 @@ const Section1 = () => {
 
              {/* Heading Boxes */}
         <div
-        className="absolute px-6 py-3 top-0 left-[-110px] bg-white bg-opacity-30  rounded-lg border border-gray-300"
+        className="absolute px-6 py-3  top-0 right-[-200px] bg-white bg-opacity-30  rounded-lg border border-gray-300"
         >
           <p className="text-center text-sm font-semibold text-gray-800">SNS Spine</p>
         </div>
