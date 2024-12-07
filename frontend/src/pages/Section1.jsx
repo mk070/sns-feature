@@ -2,36 +2,23 @@ import React from 'react';
 
 const Section1 = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-white to-blue-500 flex items-center justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl p-4">
-        {/* Card 1 */}
-        <div className="glass-card">
-          <h3 className="text-xl font-semibold text-gray-900">Feature 1</h3>
-          <p className="text-gray-700 mt-2">This is a description of Feature 1.</p>
-        </div>
+    <div className="min-h-screen bg-white flex items-center justify-center relative">
+      {/* Center Sun */}
+      <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center shadow-lg animate-pulse">
+        <h2 className="text-white font-bold text-lg">Sun</h2>
+      </div>
 
-        {/* Card 2 */}
-        <div className="glass-card">
-          <h3 className="text-xl font-semibold text-gray-900">Feature 2</h3>
-          <p className="text-gray-700 mt-2">This is a description of Feature 2.</p>
+      {/* Outer Orbit */}
+      <div className="absolute w-96 h-96 rounded-full border-2 border-dotted border-black flex items-center justify-center animate-spin-slow">
+        <div className="absolute top-0 w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-md">
+          <p className="text-white text-sm text-center">Feature 1</p>
         </div>
+      </div>
 
-        {/* Card 3 */}
-        <div className="glass-card">
-          <h3 className="text-xl font-semibold text-gray-900">Feature 3</h3>
-          <p className="text-gray-700 mt-2">This is a description of Feature 3.</p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="glass-card">
-          <h3 className="text-xl font-semibold text-gray-900">Feature 4</h3>
-          <p className="text-gray-700 mt-2">This is a description of Feature 4.</p>
-        </div>
-
-        {/* Card 5 */}
-        <div className="glass-card">
-          <h3 className="text-xl font-semibold text-gray-900">Feature 5</h3>
-          <p className="text-gray-700 mt-2">This is a description of Feature 5.</p>
+      {/* Inner Orbit */}
+      <div className="absolute w-72 h-72 rounded-full border-2 border-dotted border-black flex items-center justify-center animate-spin-reverse">
+        <div className="absolute bottom-0 w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-md">
+          <p className="text-white text-sm text-center">Feature 2</p>
         </div>
       </div>
     </div>
