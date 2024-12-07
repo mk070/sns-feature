@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/sns.png';
 
 const Nav = () => {
+  const [openSideBar, setOpenSideBar] = useState(false);
+
+  useEffect(() => {
+    if (openSideBar) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [openSideBar]);
+
   return (
     <>
-      {/* <nav className="fixed top-0 left-0 w-full mx-11  z-50 shadow-md p-4 px-16 bg-white bg-opacity-90 backdrop-blur-lg"> */}
-      <nav className="flex h-16 sticky top-0 shadow-md p-4 px-16 rounded-[60px] bg-white bg-opacity-50 mt-4 mx-8">
-
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex h-16 sticky top-0 shadow-md p-4 px-16 rounded-[60px] bg-white bg-opacity-50 mt-4 mx-8">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo Section */}
-          <div className="text-2xl font-bold flex text-primary">
-            <span>SNS Logo</span>
-          </div>
+          <img src={logo} alt="SNS Logo" className="w-auto h-14 object-contain" />
 
           {/* Navigation Links */}
           <ul className="flex space-x-8 font-bold">
@@ -29,6 +39,65 @@ const Nav = () => {
             </li>
           </ul>
         </div>
+      </nav>
+
+      {/* Mobile Navigation */}
+      <section
+        className={`${
+          openSideBar ? 'absolute w-full' : 'hidden'
+        } h-screen bg-white z-50 p-5 flex flex-col`}
+      >
+        {/* Sidebar Header */}
+        <div className="flex flex-row justify-between items-center">
+          <img src={logo} alt="SNS Logo" className="w-auto h-14 object-contain" />
+          <FontAwesomeIcon
+            icon={faClose}
+            className="cursor-pointer w-6 h-6"
+            onClick={() => setOpenSideBar((prev) => !prev)}
+          />
+        </div>
+
+        {/* Sidebar Links */}
+        <div className="flex flex-col justify-evenly items-center flex-1 text-2xl py-[50%] space-y-6">
+          <p className="cursor-pointer" onClick={() => setOpenSideBar(false)}>
+            Home
+          </p>
+          <p className="cursor-pointer" onClick={() => setOpenSideBar(false)}>
+            Contact Us
+          </p>
+          <p className="cursor-pointer" onClick={() => setOpenSideBar(false)}>
+            About Us
+          </p>
+          <p className="cursor-pointer" onClick={() => setOpenSideBar(false)}>
+            Help
+          </p>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex justify-between px-8 text-lg font-medium">
+          <a
+            href="https://www.linkedin.com/company/sns-ihub/"
+            className="text-blue-600 hover:underline"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/snsinstitutions/p/DDQijzoTAA6/"
+            className="text-pink-600 hover:underline"
+          >
+            Instagram
+          </a>
+        </div>
+      </section>
+
+      {/* Mobile Top Bar */}
+      <nav className="p-2 px-4 shadow-sm w-full z-100 flex md:hidden flex-row items-center justify-between bg-white">
+        <img src={logo} alt="SNS Logo" className="w-auto h-10 object-contain" />
+        <FontAwesomeIcon
+          icon={faBars}
+          className="cursor-pointer"
+          onClick={() => setOpenSideBar((prev) => !prev)}
+        />
       </nav>
 
       {/* Content for Nested Routes */}

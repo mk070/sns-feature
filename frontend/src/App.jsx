@@ -40,7 +40,7 @@ const App = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex-grow">
         <Routes>
-            <Route path="/" element={!isMobile ? <Home /> : <Section3 />} />
+            <Route path="/" element={<Home isMobile={isMobile} />} />
             <Route path="section1" element={!isMobile ? <Section1 /> : <Section3 />} />
             <Route path="section2" element={<Section2 />} />
             <Route path="section3" element={<Section3 />} />

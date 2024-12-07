@@ -3,8 +3,9 @@ import Nav from '../layout/Nav';
 import Section1 from './Section1';
 import OurVision from '../components/OurVision';
 import Footer from '../components/Footer';
+import Section3 from './Section3';
 
-const Home = () => {
+const Home = ({ isMobile }) => {
   const [selectedSection, setSelectedSection] = useState('Section1');
 
   const renderSection = () => {
@@ -23,17 +24,16 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-gray-100 relative overflow-hidden font-space-grotesk">
       {/* Background Gradients */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-r from-[#FCC900] to-[#ffbd52] opacity-30 rounded-full filter blur-3xl z-0"></div>
-      <div className="absolute top-96 left-0 w-96 h-96 bg-gradient-to-l from-[#ffbd52] to-[#FCC900] opacity-30 rounded-full filter blur-3xl z-0"></div>
+      <div className="absolute top-0 right-0 sm:w-72 w-52 h-52 sm:h-72 bg-gradient-to-r from-[#FCC900] to-[#ffbd52] opacity-20 rounded-full filter blur-3xl z-0"></div>
+      <div className="absolute top-[450px] left-0 sm:w-96 sm:h-96 w-48 h-48 bg-gradient-to-l from-[#ffbd52] to-[#FCC900] opacity-20 rounded-full filter blur-3xl z-0"></div>
 
       {/* Sticky Navigation Bar */}
       <Nav />
 
-      
-        <OurVision />
-        <Section1/>
-        <Footer/>
-      </div>
+      <OurVision />
+      {isMobile ? <Section3 /> : <Section1 />}
+      <Footer />
+    </div>
   );
 };
 
