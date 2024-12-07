@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Section1 from './pages/Section1';
 import Section2 from './pages/Section2';
 import Section3 from './pages/Section3';
+import './App.css';
 
 const App = () => {
   const sections = ['/section1', '/section2', '/section3'];
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+      {/* <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div className="container mx-auto flex items-center justify-between p-4">
           <div>
             <button
@@ -47,10 +48,10 @@ const App = () => {
             Toggle Section
           </button>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Main Content */}
-      <div className="flex-grow mt-20">
+      <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Section1 />} />
           <Route path="/section1" element={<Section1 />} />
