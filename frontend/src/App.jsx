@@ -4,6 +4,7 @@ import Section1 from './pages/Section1';
 import Section2 from './pages/Section2';
 import Section3 from './pages/Section3';
 import './App.css';
+import Home from './pages/Home';
 
 const App = () => {
   const sections = ['/section1', '/section2', '/section3'];
@@ -45,7 +46,7 @@ const App = () => {
       {/* Main Content */}
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={!isMobile ? <Section1 /> : <Section3 />} />
+          <Route path="/" element={!isMobile ? <Home /> : <Section3 />} />
           <Route path="/section1" element={!isMobile ? <Section1 /> : <Section3 />} />
           <Route path="/section2" element={<Section2 />} />
           <Route path="/section3" element={<Section3 />} />
