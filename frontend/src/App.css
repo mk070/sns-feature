@@ -1,3 +1,7 @@
+* {
+  transition: all ease 0.3s;
+}
+
 .hexagon-glass {
   position: relative;
   width: 250px; /* Default width */
