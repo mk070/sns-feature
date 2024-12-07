@@ -51,7 +51,7 @@ const App = () => {
       </nav> */}
 
       {/* Main Content */}
-      <div className="flex-grow mt-20">
+      <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Section1 />} />
           <Route path="/section1" element={<Section1 />} />

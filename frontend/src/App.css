@@ -60,3 +60,20 @@
     height: 140px; /* Adjusted for very small screens */
   }
 }
+
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: orbit 12s linear infinite; /* Smooth rotation */
+}
