@@ -5,7 +5,7 @@ const Section1 = () => {
     <div className="min-h-screen bg-white flex items-center justify-center relative">
       {/* Center Sun */}
       <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center shadow-lg animate-pulse">
-        <h2 className="text-white font-bold text-lg">Sun</h2>
+        <h2 className="text-white font-bold text-lg">logo</h2>
       </div>
 
       {/* Outer Orbit */}
