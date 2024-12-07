@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Section1 from './pages/Section1';
 import Section2 from './pages/Section2';
@@ -10,6 +10,30 @@ const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 425px)');
+
+    // Function to update the isMobile state based on the screen size
+    const handleResize = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    // Initialize the mobile state on component mount
+    handleResize();
+
+    // Add the event listener for changes to the media query
+    mediaQuery.addEventListener('change', handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      mediaQuery.removeEventListener('change', handleResize);
+    };
+  }, []);
+
+  useEffect(() => { console.log(isMobile) }, [])
+
   const handleToggle = () => {
     const nextIndex = (currentIndex + 1) % sections.length;
     setCurrentIndex(nextIndex);
@@ -18,43 +42,11 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Navigation Bar */}
-      {/* <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <div>
-            <button
-              onClick={() => navigate('/section1')}
-              className="text-gray-800 px-4 py-2 mx-2 rounded-lg hover:bg-gray-100 font-medium"
-            >
-              Section 1
-            </button>
-            <button
-              onClick={() => navigate('/section2')}
-              className="text-gray-800 px-4 py-2 mx-2 rounded-lg hover:bg-gray-100 font-medium"
-            >
-              Section 2
-            </button>
-            <button
-              onClick={() => navigate('/section3')}
-              className="text-gray-800 px-4 py-2 mx-2 rounded-lg hover:bg-gray-100 font-medium"
-            >
-              Section 3
-            </button>
-          </div>
-          <button
-            onClick={handleToggle}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-          >
-            Toggle Section
-          </button>
-        </div>
-      </nav> */}
-
       {/* Main Content */}
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={<Section1 />} />
-          <Route path="/section1" element={<Section1 />} />
+          <Route path="/" element={!isMobile ? <Section1 /> : <Section3 />} />
+          <Route path="/section1" element={!isMobile ? <Section1 /> : <Section3 />} />
           <Route path="/section2" element={<Section2 />} />
           <Route path="/section3" element={<Section3 />} />
         </Routes>
