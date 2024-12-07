@@ -16,17 +16,18 @@ const Section3 = () => {
 
   return (
     <div className='relative flex flex-col justify-start items-start'>
-      <section className={`${openSideBar ? "absolute w-full" : "hidden"} h-screen bg-white z-10 p-5 flex flex-col`}>
+      <section className={`${openSideBar ? "sidebar" : "sidebar-hidden"
+        } p-5 flex flex-col`}>
         <div className='flex flex-row justify-between items-center'>
           <img src={logo} alt="" className='w-14 h-14 object-cover' />
           <FontAwesomeIcon icon={faClose} className='cursor-pointer w-6 h-6' onClick={() => setOpenSideBar(stat => !stat)} />
         </div>
 
         <div className='flex flex-col justify-evenly items-center flex-1 text-2xl py-[50%]'>
-          <p> Home </p>
-          <p> Contact Us </p>
-          <p> About Us </p>
-          <p> Help </p>
+          <p className='cursor-pointer hover:underline underline-offset-8'> Home </p>
+          <p className='cursor-pointer hover:underline underline-offset-8'> Contact Us </p>
+          <p className='cursor-pointer hover:underline underline-offset-8'> About Us </p>
+          <p className='cursor-pointer hover:underline underline-offset-8'> Help </p>
         </div>
 
         <div className='flex justify-between'>
@@ -78,7 +79,7 @@ const Section3 = () => {
           <div className='flex flex-col text-[10px] mt-6 sm:text-[11px]'>
             <p className='bg-[#EB510B] p-2 rounded-lg mb-1 text-white font-semibold'> SNS Institutions </p>
             <p className='ml-1 w-[140px] mbmd:w-[200px] mblg:w-[250px]'> Nurturing holistic development
-             through quality education. </p>
+              through quality education. </p>
           </div>
         </div>
 
@@ -86,7 +87,7 @@ const Section3 = () => {
           <div className='rounded-full bg-[#01A3D4] p-1'> <FontAwesomeIcon icon={faLightbulb} className='text-white w-6' /> </div>
           <div className='flex flex-col text-[10px] mt-12 mbmd:mt-10 sm:text-[11px]'>
             <p className='bg-[#01A3D4] p-2 rounded-lg mb-1 text-white font-semibold'> SNS B Spine </p>
-            <p className='w-[180px] ml-1 mbmd:w-[250px]'> Igniting Gen Y through movement, 
+            <p className='w-[180px] ml-1 mbmd:w-[250px]'> Igniting Gen Y through movement,
               innovation, and teamwork </p>
           </div>
         </div>

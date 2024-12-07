@@ -1,0 +1,21 @@
+.sidebar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    transform: translateX(0); /* Default visible state */
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-hidden {
+    transform: translateX(-100%); /* Slide out to the left */
+    opacity: 0; /* Optionally reduce opacity for better effect */
+    pointer-events: none; /* Prevent interaction when hidden */
+    position: absolute;
+  }
+  
