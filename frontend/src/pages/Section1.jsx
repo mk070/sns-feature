@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faLaptop, faClose, faDumbbell, faHandsHelping, faLightbulb, faRocket, faSchool } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding, faLaptop, faDumbbell, faLightbulb, faSchool } from '@fortawesome/free-solid-svg-icons'
 
 const Section1 = () => {
 //   const features = [
