@@ -16,24 +16,19 @@ const App = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 425px)');
 
-    // Function to update the isMobile state based on the screen size
     const handleResize = () => {
       setIsMobile(mediaQuery.matches);
     };
 
-    // Initialize the mobile state on component mount
     handleResize();
-
-    // Add the event listener for changes to the media query
     mediaQuery.addEventListener('change', handleResize);
 
-    // Cleanup listener on component unmount
     return () => {
       mediaQuery.removeEventListener('change', handleResize);
     };
   }, []);
 
-  useEffect(() => { console.log(isMobile) }, [])
+  useEffect(() => { console.log(isMobile) }, []);
 
   const handleToggle = () => {
     const nextIndex = (currentIndex + 1) % sections.length;
@@ -43,13 +38,12 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Main Content */}
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={!isMobile ? <Home /> : <Section3 />} />
-          <Route path="/section1" element={!isMobile ? <Section1 /> : <Section3 />} />
-          <Route path="/section2" element={<Section2 />} />
-          <Route path="/section3" element={<Section3 />} />
+            <Route path="/" element={!isMobile ? <Home /> : <Section3 />} />
+            <Route path="section1" element={!isMobile ? <Section1 /> : <Section3 />} />
+            <Route path="section2" element={<Section2 />} />
+            <Route path="section3" element={<Section3 />} />
         </Routes>
       </div>
     </div>
