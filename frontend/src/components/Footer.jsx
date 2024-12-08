@@ -80,20 +80,20 @@ const Footer = () => {
     // </footer>
 
     <footer className="bg-white shadow-lg p-3 flex flex-col justify-center items-center pt-10 py-5">
-      <img src={group45} alt="" className="object-cover w-[220px] h-auto mb-4 md:mb-10 mid:w-[250px] mid:h-auto" />
-      <div className="flex flex-col justify-center items-center md:flex-row md:items-start">
-        <div className="flex flex-col justify-center items-center md:w-[70%] max-w-[800px]">
-          <p className="my-5 font-semibold text-xl"> <FontAwesomeIcon icon={faLocationDot} className="mr-1" /> Our Locations </p>
-          <span className="mid:flex mid:flex-row mid:items-center mid:justify-evenly">
-            <p className="text-center text-sm"> 536, Thudiyalur - Saravanampatti Rd, Fathima Nagar, Vellakinar, Coimbatore, Tamil Nadu 641029 </p>
-            <p className="text-center text-sm mt-4 mid:mt-0"> The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103. </p>
-          </span>
-        </div>
+      <img src={group45} alt="" className="object-cover w-[220px] h-auto mb-4 md:mb-10 mid:w-[300px] mid:h-auto" />
+      <div className="flex flex-col justify-center items-center w-full">
+        <p className="my-5 font-semibold text-xl"> <FontAwesomeIcon icon={faLocationDot} className="mr-1" /> Our Locations </p>
+        <div className="flex flex-col justify-center items-center mid:flex-row w-full">
+          <div className="flex-1 flex flex-col mid:flex-row justify-evenly w-full">
+            <p className="text-center text-sm max-w-[400px]"> 536, Thudiyalur - Saravanampatti Rd, Fathima Nagar, Vellakinar, Coimbatore, Tamil Nadu 641029 </p>
+            <p className="text-center text-sm mt-4 mid:mt-0 max-w-[400px]"> The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103. </p>
+          </div>
 
-        <div className="flex flex-col justify-center items-center flex-1">
-          <p className="my-5 mt-8 font-semibold text-xl md:mt-5"> <FontAwesomeIcon icon={faHandshake} className="mr-1" /> Contact Us </p>
-          <p className="text-center text-sm"> <FontAwesomeIcon icon={faPhone} className="mr-1" /> 95664 23456 </p>
-          <p className="text-center text-sm mt-4"> <FontAwesomeIcon icon={faGlobe} className="mr-1" /> snsgroups.com </p>
+          <div className="flex flex-col mid:w-[25%] justify-center items-center">
+            <p className="my-5 mt-8 font-semibold text-xl md:mt-5 mid:mt-0 mid:mb-2"> <FontAwesomeIcon icon={faHandshake} className="mr-1 mid:hidden" /> Contact Us </p>
+            <p className="text-center text-sm"> <FontAwesomeIcon icon={faPhone} className="mr-1" /> 95664 23456 </p>
+            <p className="text-center text-sm mt-4 mid:mt-1"> <FontAwesomeIcon icon={faGlobe} className="mr-1" /> snsgroups.com </p>
+          </div>
         </div>
       </div>
       <p className="text-center text-sm mt-10 text-gray-500"> Non Copyrighted © 2024 Design and upload by SNSGROUPS </p>
