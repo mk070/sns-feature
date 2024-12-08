@@ -79,26 +79,64 @@ const Footer = () => {
     //   </div>
     // </footer>
 
-    <footer className="bg-white shadow-lg p-3 flex flex-col justify-center items-center pt-10 py-5">
-      <img src={group45} alt="" className="object-cover w-[220px] h-auto mb-4 md:mb-10 mid:w-[300px] mid:h-auto" />
-      <div className="flex flex-col justify-center items-center w-full">
-        <p className="my-5 font-semibold text-xl"> <FontAwesomeIcon icon={faLocationDot} className="mr-1" /> Our Locations </p>
-        <div className="flex flex-col justify-center items-center mid:flex-row w-full">
-          <div className="flex-1 flex flex-col items-center mid:flex-row mid:justify-evenly w-full">
-            <p className="text-center text-sm max-w-[400px]"> 536, Thudiyalur - Saravanampatti Rd, Fathima Nagar, Vellakinar, Coimbatore, Tamil Nadu 641029 </p>
-            <hr className="mt-4 mid:hidden mx-3 w-full"/> 
-            <p className="text-center text-sm mt-4 mid:mt-0 max-w-[400px]"> The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103. </p>
-          </div>
+    <footer className="bg-white text-black py-10 flex flex-col items-center text-center">
+      {/* Logo Section */}
+      <img
+        src={group45}
+        alt="SNS Logo"
+        className="w-[320px] my-6 h-auto mb-6"
+      />
+<div>
+<h2 className="text-lg font-bold mb-2">
+            <FontAwesomeIcon icon={faLocationDot} className="mr-1" />
+            Our Locations
+          </h2>
+</div>
+      {/* Locations and Contact Section */}
+      <div className="w-full flex flex-col md:flex-row justify-evenly items-center px-4">
 
-          <div className="flex flex-col mid:w-[25%] justify-center items-center">
-            <p className="my-5 mt-8 font-semibold text-xl md:mt-5 mid:mt-0 mid:mb-2"> <FontAwesomeIcon icon={faHandshake} className="mr-1 mid:hidden" /> Contact Us </p>
-            <p className="text-center text-sm"> <FontAwesomeIcon icon={faPhone} className="mr-1" /> 95664 23456 </p>
-            <a href="https://snsgroups.com/main/" className="text-center text-sm mt-4 mid:mt-1"> <FontAwesomeIcon icon={faGlobe} className="mr-1" /> www.snsgroups.com </a>
-          </div>
+        {/* SNS Innovation Hub */}
+        <div className="flex-1 px-4 mb-6 md:mb-0 md:flex md:flex-col md:items-center md:justify-center">
+          <h2 className="text-lg font-bold mb-2"></h2>
+          <p className="text-sm leading-6 max-w-xs ">
+          536, Thudiyalur - Saravanampatti Rd, Fathima Nagar, Vellakinar, Coimbatore, Tamil Nadu 641029
+          </p>
+        </div>
+
+        {/* Locations Heading */}
+        <div className="flex-1 px-4 mb-6 sm:mt-4 md:mb-0 md:flex md:flex-col md:items-center md:justify-center">
+        
+          <p className="text-sm leading-6 max-w-xs">
+          The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103.
+          </p>
+        </div>
+
+        {/* Contact Section */}
+        <div className="flex-1 px-4 md:flex md:flex-col md:items-center md:justify-center">
+          <h2 className="text-lg font-bold mb-2">Contact Us</h2>
+          <p className="text-sm mb-1">
+            <FontAwesomeIcon icon={faPhone} className="mr-1" />
+            95664 23456
+          </p>
+          <a
+            href="https://main.snsgroups.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-500 hover:underline"
+          >
+            <FontAwesomeIcon icon={faGlobe} className="mr-1" />
+            www.snsgroups.com
+          </a>
         </div>
       </div>
-      <p className="text-center text-sm mt-10 text-gray-500"> Copyrighted © 2024 Design and upload by SNSGROUPS </p>
+
+      {/* Footer Note */}
+      <p className="text-sm text-gray-500 mt-8">
+        Copyrighted © 2024 Design and upload by SNSGROUPS
+      </p>
     </footer>
+
+
   );
 };
 

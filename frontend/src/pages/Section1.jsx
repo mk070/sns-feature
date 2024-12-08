@@ -44,7 +44,7 @@ const Section1 = () => {
       title: "SNS Institutions",
       description: "Fostering holistic growth through high-quality education.",
       gradient: "linear-gradient(to right, #ffb390, #ff5714)",
-      link:'https://snsgroups.com/main',
+      link:'https://main.snsgroups.com/',
       top: "480px",
       left: "850px",
     },

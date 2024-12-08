@@ -79,7 +79,7 @@ const Section3 = () => {
         {/* SNS Institutions */}
         <div
           className="absolute flex flex-row items-start translate-x-[90%] translate-y-[250%] mbmd:translate-y-[230%] mbmd:translate-x-[96%] sm:translate-y-[300%] cursor-pointer"
-          onClick={() => window.open('https://snsgroups.com/', '_blank')}
+          onClick={() => window.open('https://main.snsgroups.com/', '_blank')}
         >
           <div className="rounded-full bg-[#EB510B] p-1 mr-2">
             <FontAwesomeIcon icon={faSchool} className="text-white w-6" />
@@ -104,7 +104,7 @@ const Section3 = () => {
           </div>
           <div className="flex flex-col text-[10px] mt-12 mbmd:mt-10 sm:text-[11px]">
             <p className="bg-[#01A3D4] p-2 rounded-lg mb-1 text-white font-semibold">
-              SNS B Spine
+              SNS Spine
             </p>
             <p className="w-[180px] ml-1 mbmd:w-[250px]">
               Igniting Gen Y through movement, innovation, and teamwork
