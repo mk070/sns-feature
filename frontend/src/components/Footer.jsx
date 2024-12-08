@@ -84,8 +84,9 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center w-full">
         <p className="my-5 font-semibold text-xl"> <FontAwesomeIcon icon={faLocationDot} className="mr-1" /> Our Locations </p>
         <div className="flex flex-col justify-center items-center mid:flex-row w-full">
-          <div className="flex-1 flex flex-col mid:flex-row justify-evenly w-full">
+          <div className="flex-1 flex flex-col items-center mid:flex-row mid:justify-evenly w-full">
             <p className="text-center text-sm max-w-[400px]"> 536, Thudiyalur - Saravanampatti Rd, Fathima Nagar, Vellakinar, Coimbatore, Tamil Nadu 641029 </p>
+            <hr className="mt-4 mid:hidden mx-3 w-full"/> 
             <p className="text-center text-sm mt-4 mid:mt-0 max-w-[400px]"> The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103. </p>
           </div>
 
