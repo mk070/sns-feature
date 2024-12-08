@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="flex flex-col mid:w-[25%] justify-center items-center">
             <p className="my-5 mt-8 font-semibold text-xl md:mt-5 mid:mt-0 mid:mb-2"> <FontAwesomeIcon icon={faHandshake} className="mr-1 mid:hidden" /> Contact Us </p>
             <p className="text-center text-sm"> <FontAwesomeIcon icon={faPhone} className="mr-1" /> 95664 23456 </p>
-            <p className="text-center text-sm mt-4 mid:mt-1"> <FontAwesomeIcon icon={faGlobe} className="mr-1" /> snsgroups.com </p>
+            <a href="https://snsgroups.com/main/" className="text-center text-sm mt-4 mid:mt-1"> <FontAwesomeIcon icon={faGlobe} className="mr-1" /> www.snsgroups.com </a>
           </div>
         </div>
       </div>

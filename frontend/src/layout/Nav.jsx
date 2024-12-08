@@ -21,7 +21,7 @@ const Nav = () => {
       <nav className="hidden md:flex h-16 sticky top-0 shadow-md p-4 px-16 rounded-[60px] bg-white bg-opacity-50 mt-4 mx-8">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo Section */}
-          <img src={logo} alt="SNS Logo" className="w-auto h-12 object-contain" />
+          <img src={logo} alt="SNS Logo" className="w-auto h-14 object-contain" />
 
           {/* Navigation Links
           <ul className="flex space-x-8 font-bold">
@@ -99,7 +99,7 @@ const Nav = () => {
 
 {/* Mobile Top Bar */}
 <nav className="p-2 px-4 shadow-sm w-full z-50 flex md:hidden flex-row items-center justify-between bg-white">
-  <img src={logo} alt="SNS Logo" className="w-auto h-10 object-contain" />
+  <img src={logo} alt="SNS Logo" className="w-auto h-12 object-contain" />
   {/* <FontAwesomeIcon
     icon={faBars}
     className="cursor-pointer text-xl"

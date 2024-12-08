@@ -17,7 +17,7 @@ const Section3 = () => {
         <div className="bg-white shadow-2xl flex items-center justify-center p-3 rounded-full">
           <div className="rounded-full bg-yellow-300 h-[250px] w-[250px] flex justify-end items-center p-4 sm:w-[330px] sm:h-[330px]">
             <p className="w-[100px] text-wrap text-sm font-bold sm:w-[130px] sm:text-lg">
-              SNS DESIGN THINKING CONSULTANCY
+              SNS Design Thinking Consultancy
             </p>
           </div>
         </div>
