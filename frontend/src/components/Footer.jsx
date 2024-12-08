@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-sm mt-10 text-gray-500"> Non Copyrighted © 2024 Design and upload by SNSGROUPS </p>
+      <p className="text-center text-sm mt-10 text-gray-500"> Copyrighted © 2024 Design and upload by SNSGROUPS </p>
     </footer>
   );
 };
