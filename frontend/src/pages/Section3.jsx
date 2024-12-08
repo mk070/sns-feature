@@ -7,7 +7,7 @@ import sqaureVentureCapital from '../assets/square-venture-capital.svg'
 import iHub from '../assets/iHub.svg'
 import snsIns from '../assets/snsIns.svg'
 import logo from '../assets/logo.svg'
-import { faArrowUpRightDots, faBars, faBrain, faClose, faGear, faGraduationCap, faHandHoldingDollar, faHandsHelping, faLightbulb, faMicrochip, faRocket, faSchool } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightDots, faBars, faClose, faGraduationCap, faHandHoldingDollar, faHandsHelping, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Section3 = () => {
@@ -16,8 +16,7 @@ const Section3 = () => {
 
   return (
     <div className='relative flex flex-col justify-start items-start'>
-      <section className={`${openSideBar ? "sidebar" : "sidebar-hidden"
-        } p-5 flex flex-col`}>
+      <section className={`${openSideBar ? "sidebar" : "sidebar-hidden"} p-5 flex flex-col`}>
         <div className='flex flex-row justify-between items-center'>
           <img src={logo} alt="" className='w-14 h-14 object-cover' />
           <FontAwesomeIcon icon={faClose} className='cursor-pointer w-6 h-6' onClick={() => setOpenSideBar(stat => !stat)} />
