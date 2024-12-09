@@ -162,53 +162,58 @@ top: 13% !important;
       background-color: lightblue !important; /* Example styles */
       
   }
+
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+  }
   .box1{
-    top: 50px ;
-    left:440px ;
+    top: 60px ;
+    left:320px ;
     position: absolute;
     width: 100%;
   }
   .box2{
-    top: 150px !important;
-    left: 580px !important;
+    top: 140px !important;
+    left: 450px !important;
     width: 100%;
 position: absolute;
-    height: 4rem;
   }
   .box3{
-    top: 260px !important;
-    left: 600px !important;
+    top: 230px !important;
+    left: 480px !important;
     width: 100%;
 position: absolute;
 
   }
   .box4{
-    top: 360px !important;
-    left: 550px !important;
+    top: 320px !important;
+    left: 460px !important;
     width: 100%;
 position: absolute;
 
   }
   .box5{
-    top: 480px !important;
-    left: 440px !important;
+    top: 410px !important;
+    left: 320px !important;
     width: 100%;
 position: absolute;
 
   }
   
  .box1,.box2,.box3,.box4,.box5{
-  height: 3rem;
+  height: 2.5rem;
  }
   
 #feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
-  width: 3rem;
+  width: 2.5rem;
   height: 100%;
 }
 
 
 #heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
-  font-size: 14px ;
+  font-size: 12px ;
   height: 100%;
   width: 22rem;
   margin-left: 4rem;
@@ -220,7 +225,7 @@ position: absolute;
 }
 
 #desc{
-  font-size: 12px  ;
+  font-size: 10px  ;
 }
 }
 
@@ -228,6 +233,12 @@ position: absolute;
 @media screen and (min-width: 1367px) {
   .hero {
       background-color: lightgreen !important; /* Example styles */
+  }
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 180px;
+    top: -10px;
   }
   .box1{
     top: 75px !important;

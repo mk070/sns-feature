@@ -93,7 +93,7 @@ const Section1 = () => {
         }}
       ></div> */}
 
-        <div className="circle w-2/4 absolute left-44 top-[-10px]">
+        <div className="circle ">
           <img src={img1} alt="" srcset="" />
         </div>
 
@@ -123,7 +123,7 @@ const Section1 = () => {
             }}
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("feature.link", '_blank')}
+            onClick={() => window.open("#", '_blank')}
           >
             <p className="">SNS Venture Capital & Investment</p>
             {hoveredBox === 0 && (
