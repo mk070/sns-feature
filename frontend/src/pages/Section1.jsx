@@ -119,11 +119,10 @@ const Section1 = () => {
             style={{
              
               background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
-              cursor: "pointer",
+              // cursor: "pointer",
             }}
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("#", '_blank')}
           >
             <p className="">SNS Venture Capital & Investment</p>
             {hoveredBox === 0 && (
@@ -167,7 +166,7 @@ const Section1 = () => {
             <p className="">SNS Square Technologies</p>
             {hoveredBox === 1 && (
               <p className="mt-2  font-normal text-gray-800" id="desc">
-Driving digital trans  formation with cutting-edge IT and software solutions.                   </p>
+Driving digital transformation with cutting-edge IT and software solutions.                   </p>
             )}
           </div>
 
@@ -206,7 +205,7 @@ Driving digital trans  formation with cutting-edge IT and software solutions.   
             <p className="">SNS Innovation Hub</p>
             {hoveredBox === 2 && (
               <p className="mt-2  font-normal text-gray-800" id="desc">
-Empowering entrepreneurs with mentorship, resources, and a platform for innovation. </p>
+Empowering entrepreneurs with mentorship, resources and a platform for innovation. </p>
             )}
           </div>
 
@@ -279,10 +278,10 @@ Fostering holistic growth through high-quality education.
             onMouseLeave={() => setHoveredBox(null)}
             onClick={() => window.open("https://snsspine.in/", '_blank')}
           >
-            <p className="">SNS Spine</p>
+            <p className="">SNS SPINE</p>
             {hoveredBox === 4 && (
               <p className="mt-2  font-normal text-gray-800" id="desc">
-                Enabling mental and physical well-being through sports, gaming, entertainment, and clubs.
+                Enabling mental and physical well-being through sports, gaming, entertainment and clubs.
               </p>
             )}
           </div>

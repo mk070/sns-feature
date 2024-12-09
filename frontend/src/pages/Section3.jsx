@@ -104,7 +104,7 @@ const Section3 = () => {
           </div>
           <div className="flex flex-col text-[10px] mt-12 mbmd:mt-10 sm:text-[11px]">
             <p className="bg-[#01A3D4] p-2 rounded-lg mb-1 text-white font-semibold">
-              SNS Spine
+              SNS SPINE
             </p>
             <p className="w-[180px] ml-1 mbmd:w-[250px]">
               Igniting Gen Y through movement, innovation, and teamwork
