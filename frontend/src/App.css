@@ -218,6 +218,10 @@ top: 13% !important;
   .hero {
       /* background-color: lightyellow !important; Example styles */
   }
+  .tab{
+    height: 120vh;
+    margin-bottom: 20px;    
+  }
 }
 
 /* Laptop */
