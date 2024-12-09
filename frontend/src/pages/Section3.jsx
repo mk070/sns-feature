@@ -12,7 +12,7 @@ const Section3 = () => {
   const [openSideBar, setOpenSideBar] = useState(false);
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-start items-start">
+    <div className="relative h-[90vh] flex flex-col justify-start items-start">
       <div className="p-[30px] border-2 border-gray-500 rounded-full translate-x-[-50%] relative flex justify-end mt-[150px] sm:p-[40px]">
         <div className="bg-white shadow-2xl flex items-center justify-center p-3 rounded-full">
           <div className="rounded-full bg-yellow-300 h-[250px] w-[250px] flex justify-end items-center p-4 sm:w-[330px] sm:h-[330px]">
