@@ -450,6 +450,9 @@ position: absolute;
       /* background-color: rgb(238, 200, 144) !important; Adjusted for large screens */
       background-size: cover; /* Ensure background stretches */
   }
+  .icon{
+    font-size: 40px !important;
+  }
   .circle>img{
     width: 1500px;
     width: 1500px;

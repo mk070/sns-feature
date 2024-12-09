@@ -107,7 +107,7 @@ const Section1 = () => {
               backgroundColor: "#DE2A1B",
             }}
           >
-            <FontAwesomeIcon icon={faBuilding} className="text-white text-lg" />
+            <FontAwesomeIcon icon={faBuilding} className="text-white icon text-lg" />
           </div>
 
           {/* Content Section */}
@@ -145,7 +145,7 @@ const Section1 = () => {
               backgroundColor: "#B0D402",
             }}
           >
-            <FontAwesomeIcon icon={faLaptop} className="text-white text-lg" />
+            <FontAwesomeIcon icon={faLaptop} className="text-white icon text-lg" />
           </div>
 
           {/* Content Section */}
@@ -185,7 +185,7 @@ Driving digital transformation with cutting-edge IT and software solutions.     
           backgroundColor: "#E10485",
           }}
           >
-          <FontAwesomeIcon icon={faLightbulb} className="text-white text-lg" />
+          <FontAwesomeIcon icon={faLightbulb} className="text-white icon text-lg" />
           </div>
           {/* Content Section */}
           <div
@@ -222,7 +222,7 @@ Empowering entrepreneurs with mentorship, resources and a platform for innovatio
           backgroundColor: "#EB510B",
           }}
           >
-          <FontAwesomeIcon icon={faSchool} className="text-white text-lg" />
+          <FontAwesomeIcon icon={faSchool} className="text-white icon text-lg" />
           </div>
 
           {/* Content Section */}
@@ -260,7 +260,7 @@ Fostering holistic growth through high-quality education.
           backgroundColor: "#01A3D4",
           }}
           >
-          <FontAwesomeIcon icon={faDumbbell} className="text-white text-lg" />
+          <FontAwesomeIcon icon={faDumbbell} className="text-white icon text-lg" />
           </div>
 
           {/* Content Section */}
