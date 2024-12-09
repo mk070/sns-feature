@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="flex-1 px-4 mb-6 sm:mt-4 md:mb-0 md:flex md:flex-col md:items-center md:justify-center">
         
           <p className="text-sm leading-6 max-w-xs">
-          The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru, Karnataka 560103.
+          The Community Team, WeWork Office,BLOCK-L, Embassy TechVillage,Outer Ring Rd, Devarabisanahalli, Bellandur,Bengaluru,<br /> Karnataka 560103.
           </p>
         </div>
 
