@@ -64,7 +64,7 @@ const Section1 = () => {
   const centerX = 250; // Offset to the right of the semi-circle
 
   return (
-    <div className="min-h-screen flex relative overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
+    <div className="min-h-screen flex relative hero overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* Center Circle */}
       {/* <div
         className="w-96 h-96 absolute center bg-[#FCC900] border-[15px] border-white rounded-full flex items-center justify-center shadow-2xl z-10"

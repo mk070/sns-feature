@@ -286,3 +286,30 @@ top: 13% !important;
 /* } */
 
 /* }  */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .hero {
+      background-color: lightblue !important; /* Example styles */
+  }
+}
+
+/* Large Laptop (Screens wider than 1366px) */
+@media screen and (min-width: 1367px) {
+  .hero {
+      background-color: lightgreen !important; /* Example styles */
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+      background-color: lightyellow !important; /* Example styles */
+  }
+}
+
+/* Phone (Small devices) */
+@media screen and (max-width: 767px) {
+  .hero {
+      background-color: lightcoral !important; /* Example styles */
+  }
+}
