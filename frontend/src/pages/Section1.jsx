@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faLaptop, faDumbbell, faLightbulb, faSchool } from '@fortawesome/free-solid-svg-icons'
-
+import '../../src/App.css'
 const Section1 = () => {
 //   const features = [
 //     { color: "#01A3D4", icon: faLightbulb },
@@ -66,7 +66,8 @@ const Section1 = () => {
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* Center Circle */}
       <div
-        className="w-96 h-96 absolute bg-[#FCC900] border-[15px] border-white rounded-full flex items-center justify-center shadow-2xl z-10"
+        className="w-96 h-96 absolute center bg-[#FCC900] border-[15px] border-white rounded-full flex items-center justify-center shadow-2xl z-10"
+        id="Center-Circle"
         style={{
           left: "550px",
           transform: "translateX(-50%)",
@@ -82,6 +83,7 @@ const Section1 = () => {
       {/* Left Semi-Circle */}
       <div
         className="absolute w-[34rem] h-[34rem] rounded-full border-[18px] border-black"
+        id="Semi-Circle"
         style={{
           clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)",
           left: "550px",
@@ -92,6 +94,7 @@ const Section1 = () => {
       {/* Feature Icons */}
       <div
         className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+        id="feature-icon1"
         style={{
           top: "75px",
           left: "580px",
@@ -102,6 +105,7 @@ const Section1 = () => {
       </div>
       <div
         className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+        id="feature-icon2"
         style={{
           top: "200px",
           left: "780px",
@@ -112,6 +116,8 @@ const Section1 = () => {
       </div>
       <div
         className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+        id="feature-icon3"
+
         style={{
           top: "340px",
           left: "820px",
@@ -122,6 +128,8 @@ const Section1 = () => {
       </div>
       <div
         className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+        id="feature-icon4"
+
         style={{
           top: "480px",
           left: "780px",
@@ -132,6 +140,7 @@ const Section1 = () => {
       </div>
       <div
         className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+        id="feature-icon5"
         style={{
           top: "600px",
           left: "580px",
@@ -148,6 +157,7 @@ const Section1 = () => {
           className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
             hoveredBox === index ? "hovered" : ""
           }`}
+          id={`heading-${index}`}           
           style={{
             top: feature.top,
             left: feature.left,
