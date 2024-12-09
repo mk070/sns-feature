@@ -91,18 +91,18 @@
 }
 
 /* laptop-1024px */
-@media (min-width: 820px){
+/* @media (min-width: 820px){
   #Center-Circle {
     left: 450px !important;
     top: 80px !important;
 
     position: absolute;
     /* transform: "translateX(-40%)"!important; */
-    width: 20rem;
+    /* width: 20rem;
     height: 20rem;
-    background-color: rgb(0, 178, 160);
-  }
-  #Center-Circle>h2{
+    background-color: rgb(0, 178, 160); */
+  /* } */
+  /* #Center-Circle>h2{
     font-size: larger;
   }
   #Semi-Circle{
@@ -110,6 +110,57 @@
 border-width: 14px;
     width: 30rem;
     height: 30rem;
+  } */
+
+/* } */ 
+
+/* laptop-1440px */
+/* @media (min-width: 1280px){ 
+  #Center-Circle {
+    top: 24% !important;
+    left: 550px!important;
+    background-color: rgb(178, 0, 175);
+  width: 24rem;
+  height: 24rem;
+  }
+  .head{
+    background-color: aquamarine;
+  }
+  
+  #Semi-Circle{
+border-width: 18px;
+top: 13% !important;
+
+    left: 550px !important;
+    width: 34rem;
+    height: 34rem;
+  } */
+ 
+
+/* 4k */
+/* @media (min-width: 1536px) {
+  #Center-Circle{
+    /* left: "550px";
+    position: absolute;
+    transform: "translateX(-50%)"; */
+
+    /* background-color: rgb(0, 39, 178); */
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+      background-color: lightyellow !important; /* Example styles */
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .hero {
+      background-color: lightblue !important; /* Example styles */
+      
   }
   #feature-icon1{
     width: 3.5rem;
@@ -178,89 +229,64 @@ border-width: 14px;
 }
 }
 
-/* laptop-1440px */
-@media (min-width: 1280px){ 
-  #Center-Circle {
-    top: 24% !important;
-    left: 550px!important;
-    background-color: rgb(178, 0, 175);
-  width: 24rem;
-  height: 24rem;
+/* Large Laptop (Screens wider than 1366px) */
+@media screen and (min-width: 1367px) {
+  .hero {
+      background-color: lightgreen !important; /* Example styles */
   }
-  .head{
-    background-color: aquamarine;
-  }
-  
-  #Semi-Circle{
-border-width: 18px;
-top: 13% !important;
-
-    left: 550px !important;
-    width: 34rem;
-    height: 34rem;
-  }
-  #feature-icon1{
-    width: 4rem;
-    height: 4rem;
+  .box1{
     top: 75px !important;
     left:580px !important;
-  }
-  #feature-icon2{
-    width: 4rem;
+position: absolute;
+    width: 100%;
     height: 4rem;
+  }
+  .box2{
     top: 200px !important;
     left: 780px !important;
-  }
-  #feature-icon3{
-    width: 4rem;
+    width: 100%;
+position: absolute;
+
     height: 4rem;
+  }
+  .box3{
     top: 340px !important;
     left: 820px !important;
-  }
-  #feature-icon4{
-    width: 4rem;
+    width: 100%;
     height: 4rem;
+position: absolute;
+
+  }
+  .box4{
     top: 480px !important;
     left: 780px !important;
-  }
-  #feature-icon5{
-    width: 4rem;
+    width: 100%;
     height: 4rem;
+position: absolute;
+
+  }
+  .box5{
     top: 600px !important;
     left: 580px !important;
+    width: 100%;
+    height: 4rem;
+position: absolute;
+
   }
   
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 4rem;
+}
+
 #heading-0{
- top: 75px !important;
-    left:650px !important;
-    width: 24rem;
-    height: 4rem;
+  width: 24rem;
+ margin-left: 5rem;
 }
 #heading-1{
   width: 24rem;
     height: 4rem;
-    top: 200px !important;
-    left: 850px !important;
-}
-#heading-2{
-  width: 24rem;
-    height: 4rem;
-  top: 340px !important;
-  left: 890px !important;
-  
-}
-#heading-3{
-  width: 24rem;
-    height: 4rem;
-  top: 480px !important;
-      left: 850px !important;
-}
-#heading-4{
-  width: 24rem;
-    height: 4rem;
-  top: 600px !important;
-  left: 650px !important;
-  z-index: 100 !important;
+ margin-left: 5rem;
 }
 
 #heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
@@ -272,44 +298,14 @@ top: 13% !important;
 #desc{
   font-size: 14px !important ;
 }
+
 }
 
-/* 4k */
-/* @media (min-width: 1536px) {
-  #Center-Circle{
-    /* left: "550px";
-    position: absolute;
-    transform: "translateX(-50%)"; */
 
-    /* background-color: rgb(0, 39, 178); */
 
-/* } */
-
-/* }  */
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .hero {
-      background-color: lightblue !important; /* Example styles */
-  }
-}
-
-/* Large Laptop (Screens wider than 1366px) */
-@media screen and (min-width: 1367px) {
-  .hero {
-      background-color: lightgreen !important; /* Example styles */
-  }
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .hero {
-      background-color: lightyellow !important; /* Example styles */
-  }
-}
-
-/* Phone (Small devices) */
+/* Phone (Small devices)
 @media screen and (max-width: 767px) {
   .hero {
-      background-color: lightcoral !important; /* Example styles */
+      background-color: lightcoral !important; 
   }
-}
+} */

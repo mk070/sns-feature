@@ -59,7 +59,9 @@ const Section1 = () => {
       left: "650px",
     },
   ];
-
+  const handleMouseEnter = (index) => {
+    setHoveredBox(index);
+  };  
   const radius = 170; // Radius for positioning feature icons
   const centerX = 250; // Offset to the right of the semi-circle
 
@@ -95,67 +97,207 @@ const Section1 = () => {
           <img src={img1} alt="" srcset="" />
         </div>
 
-      {/* Feature Icons */}
-      <div
-        className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-        id="feature-icon1"
-        style={{
-          top: "75px",
-          left: "580px",
-          backgroundColor: "#DE2A1B",
-        }}
-      >
-        <FontAwesomeIcon icon={faBuilding} className="text-white text-lg" />
-      </div>
-      <div
-        className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-        id="feature-icon2"
-        style={{
-          top: "200px",
-          left: "780px",
-          backgroundColor: "#B0D402",
-        }}
-      >
-        <FontAwesomeIcon icon={faLaptop} className="text-white text-lg" />
-      </div>
-      <div
-        className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-        id="feature-icon3"
+        <div className="box1 flex row gap-5 ">
+          {/* Icon Section */}
+          <div
+            className="absolute w-full h-full rounded-full flex items-center justify-center shadow-md"
+            id="feature-icon1"
+            style={{
+             
+              backgroundColor: "#DE2A1B",
+            }}
+          >
+            <FontAwesomeIcon icon={faBuilding} className="text-white text-lg" />
+          </div>
 
-        style={{
-          top: "340px",
-          left: "820px",
+          {/* Content Section */}
+          <div
+            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+              hoveredBox === 0 ? "hovered" : ""
+            }`}
+            id="heading-0"
+            style={{
+             
+              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={() => handleMouseEnter(0)}
+            onMouseLeave={() => setHoveredBox(null)}
+            onClick={() => window.open("feature.link", '_blank')}
+          >
+            <p className="text-lg">SNS Venture Capital & Investment</p>
+            {hoveredBox === 0 && (
+              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+                Funding high-potential startups for strategic ownership stakes.
+              </p>
+            )}
+          </div>
+
+        </div>
+
+
+        <div className="box2 flex row">
+          {/* Icon Section */}
+          <div
+            className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+            id="feature-icon2"
+            style={{
+              
+              backgroundColor: "#B0D402",
+            }}
+          >
+            <FontAwesomeIcon icon={faLaptop} className="text-white text-lg" />
+          </div>
+
+          {/* Content Section */}
+          <div
+            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+              hoveredBox === 1 ? "hovered" : ""
+            }`}
+            id="heading-0"
+            style={{
+             
+              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={() => handleMouseEnter(1)}
+            onMouseLeave={() => setHoveredBox(null)}
+            onClick={() => window.open("feature.link", '_blank')}
+          >
+            <p className="text-lg">SNS Venture Capital & Investment</p>
+            {hoveredBox === 1 && (
+              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+                Funding high-potential startups for strategic ownership stakes.
+              </p>
+            )}
+          </div>
+
+
+        </div>
+        
+        <div className="box3 flex row">
+          {/* Icon Section */}
+
+          <div
+          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+          id="feature-icon3"
+
+          style={{
+          
           backgroundColor: "#E10485",
-        }}
-      >
-        <FontAwesomeIcon icon={faLightbulb} className="text-white text-lg" />
-      </div>
-      <div
-        className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-        id="feature-icon4"
+          }}
+          >
+          <FontAwesomeIcon icon={faLightbulb} className="text-white text-lg" />
+          </div>
+          {/* Content Section */}
+          <div
+            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+              hoveredBox === 2 ? "hovered" : ""
+            }`}
+            id="heading-0"
+            style={{
+             
+              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={() => setHoveredBox(null)}
+            onClick={() => window.open("feature.link", '_blank')}
+          >
+            <p className="text-lg">SNS Venture Capital & Investment</p>
+            {hoveredBox === 2 && (
+              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+                Funding high-potential startups for strategic ownership stakes.
+              </p>
+            )}
+          </div>
 
-        style={{
-          top: "480px",
-          left: "780px",
+          </div>
+          <div className="box4 flex row">
+          {/* Icon Section */}
+          <div
+          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+          id="feature-icon4"
+
+          style={{
+         
           backgroundColor: "#EB510B",
-        }}
-      >
-        <FontAwesomeIcon icon={faSchool} className="text-white text-lg" />
-      </div>
-      <div
-        className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-        id="feature-icon5"
-        style={{
-          top: "600px",
-          left: "580px",
+          }}
+          >
+          <FontAwesomeIcon icon={faSchool} className="text-white text-lg" />
+          </div>
+
+          {/* Content Section */}
+          <div
+            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+              hoveredBox === 3 ? "hovered" : ""
+            }`}
+            id="heading-0"
+            style={{
+             
+              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={() => handleMouseEnter(3)}
+            onMouseLeave={() => setHoveredBox(null)}
+            onClick={() => window.open("feature.link", '_blank')}
+          >
+            <p className="text-lg">SNS Venture Capital & Investment</p>
+            {hoveredBox === 3 && (
+              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+                Funding high-potential startups for strategic ownership stakes.
+              </p>
+            )}
+          </div>
+
+          </div>
+          <div className="box5 flex row">
+          {/* Icon Section */}
+          <div
+          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+          id="feature-icon5"
+          style={{
+            
           backgroundColor: "#01A3D4",
-        }}
-      >
-        <FontAwesomeIcon icon={faDumbbell} className="text-white text-lg" />
-      </div>
+          }}
+          >
+          <FontAwesomeIcon icon={faDumbbell} className="text-white text-lg" />
+          </div>
+
+          {/* Content Section */}
+          <div
+            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+              hoveredBox === 4 ? "hovered" : ""
+            }`}
+            id="heading-0"
+            style={{
+             
+              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={() => handleMouseEnter(4)}
+            onMouseLeave={() => setHoveredBox(null)}
+            onClick={() => window.open("feature.link", '_blank')}
+          >
+            <p className="text-lg">SNS Venture Capital & Investment</p>
+            {hoveredBox === 4 && (
+              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+                Funding high-potential startups for strategic ownership stakes.
+              </p>
+            )}
+          </div>
+
+          </div>
+
+      {/* Feature Icons */}
+    
+      
+      
+     
+      
 
       {/* Heading Boxes */}
-      {features.map((feature, index) => (
+      {/* {features.map((feature, index) => (
         <div
           key={index}
           className={`absolute  w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
@@ -179,12 +321,11 @@ const Section1 = () => {
             </p>
           )}
         </div>
-      ))}
+      ))} */}
 
       {/* Custom Styles for Hover */}
       <style jsx>{`
         .hovered {
-          transform: translateY(-30px);
           height: auto;
           padding: 16px;
         }
