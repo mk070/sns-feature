@@ -212,6 +212,9 @@ top: 13% !important;
   }
   
 
+  .tab{
+    height: 90vh;
+  }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
