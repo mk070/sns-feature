@@ -152,14 +152,14 @@ top: 13% !important;
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .hero {
-      background-color: lightyellow !important; /* Example styles */
+      /* background-color: lightyellow !important; Example styles */
   }
 }
 
 /* Laptop */
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .hero {
-      background-color: lightblue !important; /* Example styles */
+      /* background-color: lightblue !important; Example styles */
       
   }
 
@@ -232,7 +232,7 @@ position: absolute;
 /* Large Laptop (Screens wider than 1366px) */
 @media screen and (min-width: 1367px) {
   .hero {
-      background-color: lightgreen !important; /* Example styles */
+      /* background-color: lightgreen !important; Example styles */
   }
   .circle{
     width: 50%;
@@ -318,7 +318,7 @@ position: absolute;
 /* Large Laptop (Screens wider than 1366px) */
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
   .hero {
-      background-color: lightgreen !important; /* Example styles */
+      /* background-color: lightgreen !important; Example styles */
   }
 
   .box1, .box2, .box3, .box4, .box5 {
@@ -379,7 +379,7 @@ position: absolute;
 /* Large Screens (2560px and Above - 4K Screens) */
 @media screen and (min-width: 2560px) {
   .hero {
-      background-color: rgb(238, 200, 144) !important; /* Adjusted for large screens */
+      /* background-color: rgb(238, 200, 144) !important; Adjusted for large screens */
       background-size: cover; /* Ensure background stretches */
   }
   .circle>img{

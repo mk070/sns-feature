@@ -84,7 +84,7 @@ const Footer = () => {
       <img
         src={group45}
         alt="SNS Logo"
-        className="w-[320px] my-6 h-auto mb-6"
+        className="w-[320px] my-0 sm:mt-6 h-auto mb-6"
       />
 <div>
 <h2 className="text-lg font-bold mb-2">

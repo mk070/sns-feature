@@ -162,7 +162,7 @@ const Section1 = () => {
             }}
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://snsihub.ai/", '_blank')}
+            onClick={() => window.open("https://www.snssquare.com/", '_blank')}
           >
             <p className="">SNS Square Technologies</p>
             {hoveredBox === 1 && (
@@ -201,7 +201,7 @@ Driving digital trans  formation with cutting-edge IT and software solutions.   
             }}
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://main.snsgroups.com/", '_blank')}
+            onClick={() => window.open("https://snsihub.ai/", '_blank')}
           >
             <p className="">SNS Innovation Hub</p>
             {hoveredBox === 2 && (
@@ -239,7 +239,7 @@ Empowering entrepreneurs with mentorship, resources, and a platform for innovati
             }}
             onMouseEnter={() => handleMouseEnter(3)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("feature.link", '_blank')}
+            onClick={() => window.open("https://main.snsgroups.com/", '_blank')}
           >
             <p className="">SNS Institutions</p>
             {hoveredBox === 3 && (
