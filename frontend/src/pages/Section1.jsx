@@ -26,7 +26,7 @@ const Section1 = () => {
     {
       title: "SNS Square Technologies",
       description:
-        "Driving digital transformation with cutting-edge IT and software solutions.",
+        "Driving digital trans  formation with cutting-edge IT and software solutions.",
         link:'https://www.snssquare.com/',
       gradient: "linear-gradient(to right, #d8f3a3, #c5ff1b)",
       top: "200px",
@@ -56,7 +56,7 @@ const Section1 = () => {
         link:'https://snsspine.in/',
       gradient: "linear-gradient(to right, #89eaf2, #13e8ff)",
       top: "600px",
-      left: "650px",
+      left: "650px",  
     },
   ];
   const handleMouseEnter = (index) => {
@@ -112,7 +112,7 @@ const Section1 = () => {
 
           {/* Content Section */}
           <div
-            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+            className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
               hoveredBox === 0 ? "hovered" : ""
             }`}
             id="heading-0"
@@ -125,9 +125,9 @@ const Section1 = () => {
             onMouseLeave={() => setHoveredBox(null)}
             onClick={() => window.open("feature.link", '_blank')}
           >
-            <p className="text-lg">SNS Venture Capital & Investment</p>
+            <p className="">SNS Venture Capital & Investment</p>
             {hoveredBox === 0 && (
-              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
+              <p className="mt-2  font-normal text-gray-800" id="desc">
                 Funding high-potential startups for strategic ownership stakes.
               </p>
             )}
@@ -139,7 +139,7 @@ const Section1 = () => {
         <div className="box2 flex row">
           {/* Icon Section */}
           <div
-            className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+            className="absolute rounded-full flex items-center justify-center shadow-md"
             id="feature-icon2"
             style={{
               
@@ -151,24 +151,23 @@ const Section1 = () => {
 
           {/* Content Section */}
           <div
-            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+            className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
               hoveredBox === 1 ? "hovered" : ""
             }`}
             id="heading-0"
             style={{
              
-              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              background: "linear-gradient(to right, #d8f3a3, #c5ff1b)",
               cursor: "pointer",
             }}
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("feature.link", '_blank')}
+            onClick={() => window.open("https://snsihub.ai/", '_blank')}
           >
-            <p className="text-lg">SNS Venture Capital & Investment</p>
+            <p className="">SNS Square Technologies</p>
             {hoveredBox === 1 && (
-              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
-                Funding high-potential startups for strategic ownership stakes.
-              </p>
+              <p className="mt-2  font-normal text-gray-800" id="desc">
+Driving digital trans  formation with cutting-edge IT and software solutions.                   </p>
             )}
           </div>
 
@@ -179,7 +178,7 @@ const Section1 = () => {
           {/* Icon Section */}
 
           <div
-          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+          className="absolute  rounded-full flex items-center justify-center shadow-md"
           id="feature-icon3"
 
           style={{
@@ -191,29 +190,29 @@ const Section1 = () => {
           </div>
           {/* Content Section */}
           <div
-            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+            className={`absolute rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
               hoveredBox === 2 ? "hovered" : ""
             }`}
             id="heading-0"
             style={{
              
-              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              background: "linear-gradient(to right, #f4a4c4, #ff1e5f)",
               cursor: "pointer",
             }}
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("feature.link", '_blank')}
+            onClick={() => window.open("https://main.snsgroups.com/", '_blank')}
           >
-            <p className="text-lg">SNS Venture Capital & Investment</p>
+            <p className="">SNS Innovation Hub</p>
             {hoveredBox === 2 && (
-              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
-                Funding high-potential startups for strategic ownership stakes.
-              </p>
+              <p className="mt-2  font-normal text-gray-800" id="desc">
+Empowering entrepreneurs with mentorship, resources, and a platform for innovation. </p>
             )}
           </div>
 
-          </div>
-          <div className="box4 flex row">
+        </div>
+
+        <div className="box4 flex row">
           {/* Icon Section */}
           <div
           className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
@@ -242,16 +241,17 @@ const Section1 = () => {
             onMouseLeave={() => setHoveredBox(null)}
             onClick={() => window.open("feature.link", '_blank')}
           >
-            <p className="text-lg">SNS Venture Capital & Investment</p>
+            <p className="">SNS Institutions</p>
             {hoveredBox === 3 && (
-              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
-                Funding high-potential startups for strategic ownership stakes.
-              </p>
+              <p className="mt-2 font-normal text-gray-800" id="desc">
+Fostering holistic growth through high-quality education.              
+</p>
             )}
           </div>
 
-          </div>
-          <div className="box5 flex row">
+        </div>
+
+        <div className="box5 flex row">
           {/* Icon Section */}
           <div
           className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
@@ -272,17 +272,17 @@ const Section1 = () => {
             id="heading-0"
             style={{
              
-              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+              background: "linear-gradient(to right, #89eaf2, #13e8ff)",
               cursor: "pointer",
             }}
             onMouseEnter={() => handleMouseEnter(4)}
             onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("feature.link", '_blank')}
+            onClick={() => window.open("https://snsspine.in/", '_blank')}
           >
-            <p className="text-lg">SNS Venture Capital & Investment</p>
+            <p className="">SNS Spine</p>
             {hoveredBox === 4 && (
-              <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
-                Funding high-potential startups for strategic ownership stakes.
+              <p className="mt-2  font-normal text-gray-800" id="desc">
+                Enabling mental and physical well-being through sports, gaming, entertainment, and clubs.
               </p>
             )}
           </div>
