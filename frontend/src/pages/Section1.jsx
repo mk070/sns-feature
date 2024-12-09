@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faLaptop, faDumbbell, faLightbulb, faSchool } from '@fortawesome/free-solid-svg-icons'
 import '../../src/App.css'
+import img1 from '../assets/circle.png'
 const Section1 = () => {
 //   const features = [
 //     { color: "#01A3D4", icon: faLightbulb },
@@ -65,7 +66,7 @@ const Section1 = () => {
   return (
     <div className="min-h-screen flex relative overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* Center Circle */}
-      <div
+      {/* <div
         className="w-96 h-96 absolute center bg-[#FCC900] border-[15px] border-white rounded-full flex items-center justify-center shadow-2xl z-10"
         id="Center-Circle"
         style={{
@@ -73,14 +74,13 @@ const Section1 = () => {
           transform: "translateX(-50%)",
         }}
       >
-        <h2 className="text-black font-bold text-[22px] text-center">
-          <span className="text-[60px]">SNS</span><br />
+        <h2 className="text-black font-bold text-[20px] sm:text-[22px] text-center">
+          <span className="text-[58px] sm:text-[60px]">SNS</span><br />
           Design Thinking <br />
           Consultancy
         </h2>
       </div>
 
-      {/* Left Semi-Circle */}
       <div
         className="absolute w-[34rem] h-[34rem] rounded-full border-[18px] border-black"
         id="Semi-Circle"
@@ -89,7 +89,11 @@ const Section1 = () => {
           left: "550px",
           transform: "translateX(-50%)",
         }}
-      ></div>
+      ></div> */}
+
+        <div className="circle w-2/4 absolute left-44 top-[-10px]">
+          <img src={img1} alt="" srcset="" />
+        </div>
 
       {/* Feature Icons */}
       <div
@@ -154,7 +158,7 @@ const Section1 = () => {
       {features.map((feature, index) => (
         <div
           key={index}
-          className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+          className={`absolute  w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
             hoveredBox === index ? "hovered" : ""
           }`}
           id={`heading-${index}`}           
@@ -170,7 +174,7 @@ const Section1 = () => {
         >
           <p className="text-lg">{feature.title}</p>
           {hoveredBox === index && (
-            <p className="mt-2 text-sm font-normal text-gray-800">
+            <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
               {feature.description}
             </p>
           )}
