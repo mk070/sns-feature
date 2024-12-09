@@ -313,3 +313,142 @@ position: absolute;
       background-color: lightcoral !important; 
   }
 } */
+
+
+/* Large Laptop (Screens wider than 1366px) */
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+  .hero {
+      background-color: lightgreen !important; /* Example styles */
+  }
+
+  .box1, .box2, .box3, .box4, .box5 {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+  }
+
+  .box1 {
+    top: 75px !important;
+    left: 580px !important;
+  }
+
+  .box2 {
+    top: 200px !important;
+    left: 780px !important;
+  }
+
+  .box3 {
+    top: 340px !important;
+    left: 820px !important;
+  }
+
+  .box4 {
+    top: 480px !important;
+    left: 780px !important;
+  }
+
+  .box5 {
+    top: 600px !important;
+    left: 580px !important;
+  }
+
+  #feature-icon1, #feature-icon2, #feature-icon3, #feature-icon4, #feature-icon5 {
+    width: 4rem;
+  }
+
+  #heading-0, #heading-1 {
+    width: 24rem;
+    margin-left: 5rem;
+  }
+
+  #heading-0, #heading-1, #heading-2, #heading-3, #heading-4 {
+    transition: transform 0.3s ease;
+  }
+
+  #heading-0:hover, #heading-1:hover, #heading-2:hover, #heading-3:hover, #heading-4:hover {
+    transform: translateY(-30px);
+    height: auto;
+    padding: 16px;
+  }
+
+  #desc {
+    font-size: 14px !important;
+  }
+}
+
+/* Large Screens (2560px and Above - 4K Screens) */
+@media screen and (min-width: 2560px) {
+  .hero {
+      background-color: rgb(238, 200, 144) !important; /* Adjusted for large screens */
+      background-size: cover; /* Ensure background stretches */
+  }
+  .circle>img{
+    width: 1500px;
+    width: 1500px;
+  }
+  .box1{
+    top: 130px !important;
+    left:840px !important;
+    position: absolute;
+    width: 100%;
+    height: 7rem;
+  }
+  .box2{
+    top: 320px !important;
+    left: 1130px !important;
+    width: 100%;
+    position: absolute;
+    height: 7rem;
+  }
+  .box3{
+    top: 540px !important;
+    left: 1210px !important;
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+
+  }
+  .box4{
+    top: 810px !important;
+    left: 1130px !important;
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+
+  }
+  .box5{
+    top: 1005px !important;
+    left: 840px !important;
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+
+  }
+  
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 7rem;
+  height: 100%;
+  font-size: 200px !important;
+
+}
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 28px ;
+  height: 100%;
+  width: 50rem;
+  margin-left: 8rem;
+}
+
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 25px;
+}
+
+#desc{
+  font-size: 25px  ;
+}
+
+
+}
