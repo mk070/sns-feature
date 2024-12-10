@@ -5,6 +5,7 @@ import Section2 from './pages/Section2';
 import Section3 from './pages/Section3';
 import './App.css';
 import Home from './pages/Home';
+import Section4 from './pages/Section4';
 
 const App = () => {
   const sections = ['/section1', '/section2', '/section3'];
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="section1" element={!isMobile ? <Section1 /> : <Section3 />} />
             <Route path="section2" element={<Section2 />} />
             <Route path="section3" element={<Section3 />} />
+            <Route path="section4" element={<Section4 />} />
         </Routes>
       </div>
     </div>

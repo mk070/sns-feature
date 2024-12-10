@@ -1,94 +1,38 @@
 
-<div className="box2 relative">
-{/* Icon Section */}
-<div
-  className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-  id="feature-icon2"
-  style={{
-    top: "200px",
-    left: "780px",
-    backgroundColor: "#B0D402",
-  }}
->
-  <FontAwesomeIcon icon={faLaptop} className="text-white text-lg" />
-</div>
 
-{/* Content Section */}
-<div
-  className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-    hoveredBox === 0 ? "hovered" : ""
-  }`}
-  id="heading-0"
-  style={{
-    top: "200px",
-    left: "850px",
-    background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
-    cursor: "pointer",
-  }}
-  onMouseEnter={() => handleMouseEnter(0)}
-  onMouseLeave={() => setHoveredBox(null)}
-  onClick={() => window.open("feature.link", '_blank')}
->
-  <p className="text-lg">SNS Venture Capital & Investment</p>
-  {hoveredBox === 0 && (
-    <p className="mt-2 text-sm font-normal text-gray-800" id="desc">
-      Funding high-potential startups for strategic ownership stakes.
-    </p>
-  )}
-</div>
+/* Phone (Small devices)
+@media screen and (max-width: 767px) {
+  .hero {
+      background-color: lightcoral !important; 
+  }
+} */
 
 
-</div>
-<div className="box3 relative">
-{/* Icon Section */}
+/* Large Laptop (Screens wider than 1366px) */
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+  .hero {
+      /* background-color: lightgreen !important; Example styles */
+  }
 
-<div
-className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-id="feature-icon3"
+  
 
-style={{
-top: "340px",
-left: "820px",
-backgroundColor: "#E10485",
-}}
->
-<FontAwesomeIcon icon={faLightbulb} className="text-white text-lg" />
-</div>
-{/* Content Section */}
 
-</div>
-<div className="box4 relative">
-{/* Icon Section */}
-<div
-className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-id="feature-icon4"
+  #heading-0, #heading-1 {
+    width: 24rem;
+    margin-left: 5rem;
+  }
 
-style={{
-top: "480px",
-left: "780px",
-backgroundColor: "#EB510B",
-}}
->
-<FontAwesomeIcon icon={faSchool} className="text-white text-lg" />
-</div>
+  #heading-0, #heading-1, #heading-2, #heading-3, #heading-4 {
+    transition: transform 0.3s ease;
+  }
 
-{/* Content Section */}
+  #heading-0:hover, #heading-1:hover, #heading-2:hover, #heading-3:hover, #heading-4:hover {
+    transform: translateY(-30px);
+    height: auto;
+    padding: 16px;
+  }
 
-</div>
-<div className="box5 relative">
-{/* Icon Section */}
-<div
-className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-id="feature-icon5"
-style={{
-top: "600px",
-left: "580px",
-backgroundColor: "#01A3D4",
-}}
->
-<FontAwesomeIcon icon={faDumbbell} className="text-white text-lg" />
-</div>
-
-{/* Content Section */}
-
-</div>
+  #desc {
+    font-size: 14px !important;
+  }
+}

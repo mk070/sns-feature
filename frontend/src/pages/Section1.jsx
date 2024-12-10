@@ -93,201 +93,207 @@ const Section1 = () => {
         }}
       ></div> */}
 
-        <div className="circle ">
-          <img src={img1} alt="" srcset="" />
-        </div>
+        <div className="main flex ">
 
-        <div className="box1 flex row gap-5 ">
-          {/* Icon Section */}
-          <div
-            className="absolute w-full h-full rounded-full flex items-center justify-center shadow-md"
-            id="feature-icon1"
-            style={{
-             
-              backgroundColor: "#DE2A1B",
-            }}
-          >
-            <FontAwesomeIcon icon={faBuilding} className="text-white icon text-lg" />
+          {/* circle */}
+
+          <div className="circle ">
+            <img src={img1} alt="" srcset="" />
           </div>
 
-          {/* Content Section */}
-          <div
-            className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-              hoveredBox === 0 ? "hovered" : ""
-            }`}
-            id="heading-0"
-            style={{
-             
-              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
-              // cursor: "pointer",
-            }}
-            onMouseEnter={() => handleMouseEnter(0)}
-            onMouseLeave={() => setHoveredBox(null)}
-          >
-            <p className="">SNS Venture Capital & Investment</p>
-            {hoveredBox === 0 && (
-              <p className="mt-2  font-normal text-gray-800" id="desc">
-                Funding high-potential startups for strategic ownership stakes.
-              </p>
-            )}
+          {/* boxs */}
+
+          <div className="box1 flex row gap-5 ">
+            {/* Icon Section */}
+            <div
+              className="absolute w-full h-full rounded-full flex items-center justify-center shadow-md"
+              id="feature-icon1"
+              style={{
+              
+                backgroundColor: "#DE2A1B",
+              }}
+            >
+              <FontAwesomeIcon icon={faBuilding} className="text-white icon text-lg" />
+            </div>
+
+            {/* Content Section */}
+            <div
+              className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+                hoveredBox === 0 ? "hovered" : ""
+              }`}
+              id="heading-0"
+              style={{
+              
+                background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+                // cursor: "pointer",
+              }}
+              onMouseEnter={() => handleMouseEnter(0)}
+              onMouseLeave={() => setHoveredBox(null)}
+            >
+              <p className="">SNS Venture Capital & Investment</p>
+              {hoveredBox === 0 && (
+                <p className="mt-2  font-normal text-gray-800" id="desc">
+                  Funding high-potential startups for strategic ownership stakes.
+                </p>
+              )}
+            </div>
+
           </div>
 
-        </div>
+          <div className="box2 flex row">
+            {/* Icon Section */}
+            <div
+              className="absolute rounded-full flex items-center justify-center shadow-md"
+              id="feature-icon2"
+              style={{
+                
+                backgroundColor: "#B0D402",
+              }}
+            >
+              <FontAwesomeIcon icon={faLaptop} className="text-white icon text-lg" />
+            </div>
+
+            {/* Content Section */}
+            <div
+              className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+                hoveredBox === 1 ? "hovered" : ""
+              }`}
+              id="heading-0"
+              style={{
+              
+                background: "linear-gradient(to right, #d8f3a3, #c5ff1b)",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={() => setHoveredBox(null)}
+              onClick={() => window.open("https://www.snssquare.com/", '_blank')}
+            >
+              <p className="">SNS Square Technologies</p>
+              {hoveredBox === 1 && (
+                <p className="mt-2  font-normal text-gray-800" id="desc">
+  Driving digital transformation with cutting-edge IT and software solutions.                   </p>
+              )}
+            </div>
 
 
-        <div className="box2 flex row">
-          {/* Icon Section */}
-          <div
-            className="absolute rounded-full flex items-center justify-center shadow-md"
-            id="feature-icon2"
+          </div>
+          
+          <div className="box3 flex row">
+            {/* Icon Section */}
+
+            <div
+            className="absolute  rounded-full flex items-center justify-center shadow-md"
+            id="feature-icon3"
+
+            style={{
+            
+            backgroundColor: "#E10485",
+            }}
+            >
+            <FontAwesomeIcon icon={faLightbulb} className="text-white icon text-lg" />
+            </div>
+            {/* Content Section */}
+            <div
+              className={`absolute rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+                hoveredBox === 2 ? "hovered" : ""
+              }`}
+              id="heading-0"
+              style={{
+              
+                background: "linear-gradient(to right, #f4a4c4, #ff1e5f)",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => handleMouseEnter(2)}
+              onMouseLeave={() => setHoveredBox(null)}
+              onClick={() => window.open("https://snsihub.ai/", '_blank')}
+            >
+              <p className="">SNS Innovation Hub</p>
+              {hoveredBox === 2 && (
+                <p className="mt-2  font-normal text-gray-800" id="desc">
+  Empowering entrepreneurs with mentorship, resources and a platform for innovation. </p>
+              )}
+            </div>
+
+          </div>
+
+          <div className="box4 flex row">
+            {/* Icon Section */}
+            <div
+            className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+            id="feature-icon4"
+
+            style={{
+          
+            backgroundColor: "#EB510B",
+            }}
+            >
+            <FontAwesomeIcon icon={faSchool} className="text-white icon text-lg" />
+            </div>
+
+            {/* Content Section */}
+            <div
+              className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+                hoveredBox === 3 ? "hovered" : ""
+              }`}
+              id="heading-0"
+              style={{
+              
+                background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => handleMouseEnter(3)}
+              onMouseLeave={() => setHoveredBox(null)}
+              onClick={() => window.open("https://main.snsgroups.com/", '_blank')}
+            >
+              <p className="">SNS Institutions</p>
+              {hoveredBox === 3 && (
+                <p className="mt-2 font-normal text-gray-800" id="desc">
+  Fostering holistic growth through high-quality education.              
+  </p>
+              )}
+            </div>
+
+          </div>
+
+          <div className="box5 flex row">
+            {/* Icon Section */}
+            <div
+            className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
+            id="feature-icon5"
             style={{
               
-              backgroundColor: "#B0D402",
+            backgroundColor: "#01A3D4",
             }}
-          >
-            <FontAwesomeIcon icon={faLaptop} className="text-white icon text-lg" />
-          </div>
+            >
+            <FontAwesomeIcon icon={faDumbbell} className="text-white icon text-lg" />
+            </div>
 
-          {/* Content Section */}
-          <div
-            className={`absolute  rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-              hoveredBox === 1 ? "hovered" : ""
-            }`}
-            id="heading-0"
-            style={{
-             
-              background: "linear-gradient(to right, #d8f3a3, #c5ff1b)",
-              cursor: "pointer",
-            }}
-            onMouseEnter={() => handleMouseEnter(1)}
-            onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://www.snssquare.com/", '_blank')}
-          >
-            <p className="">SNS Square Technologies</p>
-            {hoveredBox === 1 && (
-              <p className="mt-2  font-normal text-gray-800" id="desc">
-Driving digital transformation with cutting-edge IT and software solutions.                   </p>
-            )}
-          </div>
+            {/* Content Section */}
+            <div
+              className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
+                hoveredBox === 4 ? "hovered" : ""
+              }`}
+              id="heading-0"
+              style={{
+              
+                background: "linear-gradient(to right, #89eaf2, #13e8ff)",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => handleMouseEnter(4)}
+              onMouseLeave={() => setHoveredBox(null)}
+              onClick={() => window.open("https://snsspine.in/", '_blank')}
+            >
+              <p className="">SNS SPINE</p>
+              {hoveredBox === 4 && (
+                <p className="mt-2  font-normal text-gray-800" id="desc">
+                  Enabling mental and physical well-being through sports, gaming, entertainment and clubs.
+                </p>
+              )}
+            </div>
 
-
-        </div>
-        
-        <div className="box3 flex row">
-          {/* Icon Section */}
-
-          <div
-          className="absolute  rounded-full flex items-center justify-center shadow-md"
-          id="feature-icon3"
-
-          style={{
-          
-          backgroundColor: "#E10485",
-          }}
-          >
-          <FontAwesomeIcon icon={faLightbulb} className="text-white icon text-lg" />
-          </div>
-          {/* Content Section */}
-          <div
-            className={`absolute rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-              hoveredBox === 2 ? "hovered" : ""
-            }`}
-            id="heading-0"
-            style={{
-             
-              background: "linear-gradient(to right, #f4a4c4, #ff1e5f)",
-              cursor: "pointer",
-            }}
-            onMouseEnter={() => handleMouseEnter(2)}
-            onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://snsihub.ai/", '_blank')}
-          >
-            <p className="">SNS Innovation Hub</p>
-            {hoveredBox === 2 && (
-              <p className="mt-2  font-normal text-gray-800" id="desc">
-Empowering entrepreneurs with mentorship, resources and a platform for innovation. </p>
-            )}
           </div>
 
         </div>
-
-        <div className="box4 flex row">
-          {/* Icon Section */}
-          <div
-          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-          id="feature-icon4"
-
-          style={{
-         
-          backgroundColor: "#EB510B",
-          }}
-          >
-          <FontAwesomeIcon icon={faSchool} className="text-white icon text-lg" />
-          </div>
-
-          {/* Content Section */}
-          <div
-            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-              hoveredBox === 3 ? "hovered" : ""
-            }`}
-            id="heading-0"
-            style={{
-             
-              background: "linear-gradient(to right, #f9e7e1, #ff5c22)",
-              cursor: "pointer",
-            }}
-            onMouseEnter={() => handleMouseEnter(3)}
-            onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://main.snsgroups.com/", '_blank')}
-          >
-            <p className="">SNS Institutions</p>
-            {hoveredBox === 3 && (
-              <p className="mt-2 font-normal text-gray-800" id="desc">
-Fostering holistic growth through high-quality education.              
-</p>
-            )}
-          </div>
-
-        </div>
-
-        <div className="box5 flex row">
-          {/* Icon Section */}
-          <div
-          className="absolute w-16 h-16 rounded-full flex items-center justify-center shadow-md"
-          id="feature-icon5"
-          style={{
-            
-          backgroundColor: "#01A3D4",
-          }}
-          >
-          <FontAwesomeIcon icon={faDumbbell} className="text-white icon text-lg" />
-          </div>
-
-          {/* Content Section */}
-          <div
-            className={`absolute w-96 h-16 rounded-full flex flex-col items-center justify-center shadow-md text-center text-black font-semibold transition-all duration-300 ${
-              hoveredBox === 4 ? "hovered" : ""
-            }`}
-            id="heading-0"
-            style={{
-             
-              background: "linear-gradient(to right, #89eaf2, #13e8ff)",
-              cursor: "pointer",
-            }}
-            onMouseEnter={() => handleMouseEnter(4)}
-            onMouseLeave={() => setHoveredBox(null)}
-            onClick={() => window.open("https://snsspine.in/", '_blank')}
-          >
-            <p className="">SNS SPINE</p>
-            {hoveredBox === 4 && (
-              <p className="mt-2  font-normal text-gray-800" id="desc">
-                Enabling mental and physical well-being through sports, gaming, entertainment and clubs.
-              </p>
-            )}
-          </div>
-
-          </div>
-
       {/* Feature Icons */}
     
       

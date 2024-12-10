@@ -149,7 +149,8 @@ top: 13% !important;
     .circle{
       width: 50%;
       position: absolute;
-      left: 50px;
+      left: 180px;
+      top: -10px;
     }
     .box1{
       top: 60px ;
@@ -196,7 +197,7 @@ top: 13% !important;
   
   
   #heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
-    font-size: 12px ;
+    font-size: 14px ;
     height: 100%;
     width: 22rem;
     margin-left: 4rem;
@@ -238,6 +239,7 @@ top: 13% !important;
     width: 50%;
     position: absolute;
     left: 50px;
+    top: 0px;
   }
   .box1{
     top: 60px ;
@@ -300,8 +302,9 @@ position: absolute;
 }
 }
 
+
 /* Large Laptop (Screens wider than 1366px) */
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1367px)  {
   .hero {
       /* background-color: lightgreen !important; Example styles */
   }
@@ -310,86 +313,6 @@ position: absolute;
     position: absolute;
     left: 180px;
     top: -10px;
-  }
-  .box1{
-    top: 75px !important;
-    left:580px !important;
-position: absolute;
-    width: 100%;
-    height: 4rem;
-  }
-  .box2{
-    top: 200px !important;
-    left: 780px !important;
-    width: 100%;
-position: absolute;
-    height: 4rem;
-  }
-  .box3{
-    top: 340px !important;
-    left: 820px !important;
-    width: 100%;
-    height: 4rem;
-position: absolute;
-
-  }
-  .box4{
-    top: 480px !important;
-    left: 780px !important;
-    width: 100%;
-    height: 4rem;
-position: absolute;
-
-  }
-  .box5{
-    top: 600px !important;
-    left: 580px !important;
-    width: 100%;
-    height: 4rem;
-position: absolute;
-
-  }
-  
-  
-#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
-  width: 4rem;
-  height: 100%;
-
-}
-
-#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
-  font-size: 16px ;
-  height: 100%;
-  width: 24rem;
-  margin-left: 5rem;
-}
-
-#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
-  transform: translateY(-30px);
-  height: auto;
-  padding: 16px;
-}
-
-#desc{
-  font-size: 14px  ;
-}
-
-}
-
-
-
-/* Phone (Small devices)
-@media screen and (max-width: 767px) {
-  .hero {
-      background-color: lightcoral !important; 
-  }
-} */
-
-
-/* Large Laptop (Screens wider than 1366px) */
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
-  .hero {
-      /* background-color: lightgreen !important; Example styles */
   }
 
   .box1, .box2, .box3, .box4, .box5 {
@@ -425,6 +348,8 @@ position: absolute;
 
   #feature-icon1, #feature-icon2, #feature-icon3, #feature-icon4, #feature-icon5 {
     width: 4rem;
+    height: 100%;
+
   }
 
   #heading-0, #heading-1 {
@@ -434,6 +359,10 @@ position: absolute;
 
   #heading-0, #heading-1, #heading-2, #heading-3, #heading-4 {
     transition: transform 0.3s ease;
+    font-size: 16px ;
+    height: 100%;
+    width: 24rem;
+    margin-left: 5rem;
   }
 
   #heading-0:hover, #heading-1:hover, #heading-2:hover, #heading-3:hover, #heading-4:hover {
@@ -443,7 +372,7 @@ position: absolute;
   }
 
   #desc {
-    font-size: 14px !important;
+    font-size: 14px ;
   }
 }
 
@@ -508,7 +437,7 @@ position: absolute;
 }
 
 #heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
-  font-size: 28px ;
+  font-size: 30px ;
   height: 100%;
   width: 50rem;
   margin-left: 8rem;
@@ -526,3 +455,5 @@ position: absolute;
 
 
 }
+
+
