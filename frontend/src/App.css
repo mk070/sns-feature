@@ -218,7 +218,7 @@ top: 13% !important;
   }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 915px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .hero {
       /* background-color: lightyellow !important; Example styles */
   }
@@ -295,7 +295,7 @@ position: absolute;
 
 
 /* Laptop */
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1120px) {
   .hero {
       /* background-color: lightblue !important; Example styles */
       
@@ -308,34 +308,107 @@ position: absolute;
     top: 0px;
   }
   .box1{
-    top: 60px ;
-    left:320px ;
+    top: 65px ;
+    left:340px ;
     position: absolute;
     width: 100%;
   }
   .box2{
-    top: 140px !important;
-    left: 450px !important;
+    top: 150px !important;
+    left: 470px !important;
     width: 100%;
 position: absolute;
   }
   .box3{
-    top: 230px !important;
-    left: 480px !important;
+    top: 240px !important;
+    left: 500px !important;
     width: 100%;
 position: absolute;
 
   }
   .box4{
-    top: 320px !important;
-    left: 460px !important;
+    top: 330px !important;
+    left: 480px !important;
     width: 100%;
 position: absolute;
 
   }
   .box5{
-    top: 410px !important;
-    left: 320px !important;
+    top: 425px !important;
+    left: 340px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2.5rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2.5rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 22rem;
+  margin-left: 4rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+
+#desc{
+  font-size: 10px  ;
+}
+}
+/* Laptop-1 */
+@media screen and (min-width: 1121px) and (max-width: 1220px) {
+  .hero {
+      /* background-color: lightblue !important; Example styles */
+      
+  }
+
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .box1{
+    top: 70px ;
+    left:350px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 160px !important;
+    left: 490px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 260px !important;
+    left: 530px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 360px !important;
+    left: 500px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 470px !important;
+    left: 350px !important;
     width: 100%;
 position: absolute;
 
@@ -368,6 +441,79 @@ position: absolute;
 }
 }
 
+/* Laptop-2 */
+@media screen and (min-width: 1221px) and (max-width: 1366px) {
+  .hero {
+      /* background-color: lightblue !important; Example styles */
+      
+  }
+
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .box1{
+    top: 75px ;
+    left:380px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 180px !important;
+    left: 520px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 285px !important;
+    left: 550px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 390px !important;
+    left: 530px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 490px !important;
+    left: 380px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2.5rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2.5rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 22rem;
+  margin-left: 4rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+
+#desc{
+  font-size: 10px  ;
+}
+}
 
 /* Large Laptop (Screens wider than 1366px) */
 @media screen and (min-width: 1367px)and (max-width: 1550px)  {
@@ -378,7 +524,7 @@ position: absolute;
     width: 50%;
     position: absolute;
     left: 180px;
-    top: -10px;
+    top: 20px;
   }
 
   .box1, .box2, .box3, .box4, .box5 {
@@ -528,7 +674,7 @@ position: absolute;
   }
   .circle>img{
     width: 1500px;
-    width: 1500px;
+    /* width: 1500px; */
   }
   .box1{
     top: 130px !important;
