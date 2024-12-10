@@ -389,27 +389,27 @@ position: absolute;
     width: 100%;
   }
   .box2{
-    top: 150px !important;
+    top: 155px !important;
     left: 470px !important;
     width: 100%;
 position: absolute;
   }
   .box3{
-    top: 240px !important;
+    top: 245px !important;
     left: 500px !important;
     width: 100%;
 position: absolute;
 
   }
   .box4{
-    top: 330px !important;
+    top: 340px !important;
     left: 480px !important;
     width: 100%;
 position: absolute;
 
   }
   .box5{
-    top: 425px !important;
+    top: 440px !important;
     left: 340px !important;
     width: 100%;
 position: absolute;
@@ -591,7 +591,7 @@ position: absolute;
 }
 
 /* Large Laptop (Screens wider than 1366px) */
-@media screen and (min-width: 1367px)  {
+@media screen and (min-width: 1367px) and (max-width: 1550px)  {
   .hero {
       /* background-color: lightgreen !important; Example styles */
   }
@@ -609,27 +609,27 @@ position: absolute;
   }
 
   .box1 {
-    top: 75px !important;
+    top: 110px !important;
     left: 580px !important;
   }
 
   .box2 {
-    top: 200px !important;
+    top: 230px !important;
     left: 780px !important;
   }
 
   .box3 {
-    top: 340px !important;
+    top: 370px !important;
     left: 820px !important;
   }
 
   .box4 {
-    top: 480px !important;
+    top: 510px !important;
     left: 780px !important;
   }
 
   .box5 {
-    top: 600px !important;
+    top: 630px !important;
     left: 580px !important;
   }
 
@@ -661,6 +661,81 @@ position: absolute;
   #desc {
     font-size: 14px ;
   }
+}
+
+@media screen and (min-width: 1551px) and (max-width: 2560px) {
+  .hero {
+      /* background-color: lightyellow !important; Example styles */
+  }
+  .tab{
+    height: 120vh;
+    margin-bottom: 20px;    
+  }
+  .circle{
+    width: 60%;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+  }
+  .box1{
+    top: 155px ;
+    left:605px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 280px !important;
+    left: 750px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 480px !important;
+    left: 800px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 630px !important;
+    left: 750px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 775px !important;
+    left: 605px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2.5rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2.5rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 22rem;
+  margin-left: 4rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+
+#desc{
+  font-size: 10px  ;
+}
 }
 
 /* Large Screens (2560px and Above - 4K Screens) */
