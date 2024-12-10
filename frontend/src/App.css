@@ -218,7 +218,7 @@ top: 13% !important;
   }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 915px) {
   .hero {
       /* background-color: lightyellow !important; Example styles */
   }
@@ -226,6 +226,71 @@ top: 13% !important;
     height: 120vh;
     margin-bottom: 20px;    
   }
+  .circle{
+    width: 60%;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+  }
+  .box1{
+    top: 90px ;
+    left:305px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 155px !important;
+    left: 410px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 250px !important;
+    left: 440px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 350px !important;
+    left: 415px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 425px !important;
+    left: 300px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2.5rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2.5rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 22rem;
+  margin-left: 4rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+
+#desc{
+  font-size: 10px  ;
+}
 }
 
 /* Laptop */
