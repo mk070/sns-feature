@@ -228,8 +228,84 @@ top: 13% !important;
   }
 }
 
+/* Tablet-2 */
+@media screen and (min-width: 916px) and (max-width: 1023px) {
+  .hero {
+      /* background-color: lightblue !important; Example styles */
+      
+  }
+
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .box1{
+    top: 55px ;
+    left:300px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 130px !important;
+    left: 420px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 210px !important;
+    left: 440px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 300px !important;
+    left: 420px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 380px !important;
+    left: 300px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 20rem;
+  margin-left: 3rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+.icon{
+  font-size: 16px !important;
+}
+#desc{
+  font-size: 10px  ;
+}
+}
+
 /* Laptop */
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1220px) {
   .hero {
       /* background-color: lightblue !important; Example styles */
       
@@ -302,6 +378,79 @@ position: absolute;
 }
 }
 
+/* Laptop-2 */
+@media screen and (min-width: 1221px) and (max-width: 1366px) {
+  .hero {
+      /* background-color: lightblue !important; Example styles */
+      
+  }
+
+  .circle{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .box1{
+    top: 75px ;
+    left:380px ;
+    position: absolute;
+    width: 100%;
+  }
+  .box2{
+    top: 180px !important;
+    left: 520px !important;
+    width: 100%;
+position: absolute;
+  }
+  .box3{
+    top: 285px !important;
+    left: 550px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box4{
+    top: 390px !important;
+    left: 530px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  .box5{
+    top: 490px !important;
+    left: 380px !important;
+    width: 100%;
+position: absolute;
+
+  }
+  
+ .box1,.box2,.box3,.box4,.box5{
+  height: 2.5rem;
+ }
+  
+#feature-icon1,#feature-icon2,#feature-icon3,#feature-icon4,#feature-icon5{
+  width: 2.5rem;
+  height: 100%;
+}
+
+
+#heading-0,#heading-1,#heading-2,#heading-3,#heading-4{
+  font-size: 12px ;
+  height: 100%;
+  width: 22rem;
+  margin-left: 4rem;
+}
+#heading-0:hover,#heading-1:hover,#heading-2:hover,#heading-3:hover,#heading-4:hover{
+  transform: translateY(-30px);
+  height: auto;
+  padding: 16px;
+}
+
+#desc{
+  font-size: 10px  ;
+}
+}
 
 /* Large Laptop (Screens wider than 1366px) */
 @media screen and (min-width: 1367px)  {
@@ -387,7 +536,7 @@ position: absolute;
   }
   .circle>img{
     width: 1500px;
-    width: 1500px;
+    /* width: 1500px; */
   }
   .box1{
     top: 130px !important;
